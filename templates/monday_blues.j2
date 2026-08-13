@@ -1,0 +1,41 @@
+# Monday Blues
+
+# Coded by Sam Aaron
+
+use_debug false
+load_samples [:{{sample_values[0]}}, :{{sample_values[(1) % sample_values|length]}}]
+
+
+live_loop :drums do
+  puts "slow drums"
+  {{repeat_small_ints[(0) % repeat_small_ints|length]}}.times do
+    sample :{{sample_values[0]}}, rate: {{repeat_probs[(0) % repeat_probs|length]}}
+    sleep {{sleep_values[(0) % sleep_values|length]}}
+  end
+
+  puts "fast drums"
+  {{repeat_small_ints[(1) % repeat_small_ints|length]}}.times do
+    sample :{{sample_values[0]}}, rate: {{repeat_probs[(1) % repeat_probs|length]}}
+    sleep 0.{{sleep_values[(1) % sleep_values|length]}}
+  end
+end
+
+live_loop :synths, delay: {{repeat_small_ints[(3) % repeat_small_ints|length]}} do
+  puts "how does it feel?"
+  use_synth :mod_saw
+  use_synth_defaults amp: {{amp_values[0]}}, attack: {{attack_values[0]}}, sustain: {{repeat_small_ints[(3) % repeat_small_ints|length]}}, release: {{release_values[0]}}, mod_range: {{repeat_small_ints[(2) % repeat_small_ints|length]}}, mod_phase: {{repeat_probs[(2) % repeat_probs|length]}}, mod_invert_wave: 1
+  notes = (ring :{{note_values[(0) % note_values|length]}}, :{{note_values[(1) % note_values|length]}}, :{{note_values[(2) % note_values|length]}}, :{{note_values[(3) % note_values|length]}}, :{{note_values[(4) % note_values|length]}}, :{{note_values[(5) % note_values|length]}}, :{{note_values[(6) % note_values|length]}}, :{{note_values[(7) % note_values|length]}})
+  notes.each do |n|
+    tick
+    play note(n, octave: 1), cutoff: (line 90, 130, steps: 16).look
+    play note(n, octave: 2), cutoff: (line 90, 130, steps: 32).look
+    sleep {{sleep_values[(2) % sleep_values|length]}}
+  end
+end
+
+live_loop :snare, delay: {{repeat_small_ints[(4) % repeat_small_ints|length]}} do
+  sample :{{sample_values[(1) % sample_values|length]}}
+  sleep {{sleep_values[(3) % sleep_values|length]}}
+end
+
+ 

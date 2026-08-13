@@ -1,0 +1,16 @@
+# Filtered Dnb
+
+# Coded by Sam Aaron
+
+use_sample_bpm :{{samples_bpm[0]}}
+
+with_fx :{{effect_values[0]}}, cutoff: {{repeat_small_ints[0]}}, cutoff_slide: 4 do |c|
+  live_loop :dnb do
+    sample :{{sample_values[0]}}, amp: {{amp_values[0]}}
+    sample :{{samples_bpm[0]}}, amp: {{amp_values[(1)% amp_values|length]}}
+    sleep {{sleep_values[0]}}
+    control c, cutoff: rrand(40, 120), cutoff_slide: rrand(1, 4)
+  end
+end
+
+ 

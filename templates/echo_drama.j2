@@ -1,0 +1,19 @@
+# Echo Drama
+
+# Coded by Sam Aaron
+
+use_synth :{{synth_values[0]}}
+use_bpm {{repeat_med_ints[0]}}
+use_random_seed 3
+use_debug false
+
+with_fx :{{effect_values[0]}} do
+  with_fx(:{{effect_values[(1) % effect_values|length]}}, delay: {{repeat_probs[0]}}, decay: {{repeat_small_ints[0]}}) do
+    live_loop :echoes do
+      play chord([:{{note_values[0]}}, :{{note_values[(1) % note_values|length]}}, :{{note_values[(2) % note_values|length]}}, :{{note_values[(3) % note_values|length]}}, :{{note_values[(4) % note_values|length]}}, :{{note_values[(5) % note_values|length]}}].choose, :{{character_values[0]}}).choose, cutoff: rrand(40, 100), amp: {{amp_values[0]}}, attack: {{attack_values[0]}}, release: rrand(1, 2), cutoff_max: 110
+      sleep [{{sleep_values[0]}}, {{sleep_values[(1) % note_values|length]}}, {{sleep_values[(2) % note_values|length]}}, {{sleep_values[(3) % note_values|length]}}, {{sleep_values[(4) % note_values|length]}}, {{sleep_values[(5) % note_values|length]}}].choose
+    end
+  end
+end
+
+ 

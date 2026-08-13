@@ -1,0 +1,23 @@
+# Jungle
+
+# Coded by Sam Aaron
+use_bpm {{repeat_large_ints[0]}}
+
+with_fx :{{effect_values[0]}}, cutoff: {{repeat_large_ints[(1) % repeat_large_ints|length]}} do
+  with_fx :{{effect_values[(1) % effect_values|length]}}, mix: {{repeat_probs[(0) % repeat_probs|length]}} do
+    with_fx :{{effect_values[(2) % effect_values|length]}}, pre_amp: {{repeat_med_ints[0]}} do
+      with_fx :{{effect_values[(3) % effect_values|length]}}, distort: {{repeat_probs[(1) % repeat_probs|length]}} do
+        live_loop :jungle do
+          use_random_seed 667
+          {{repeat_small_ints[0]}}.times do
+            sample :{{sample_values[(0) % sample_values|length]}}, beat_stretch: {{repeat_small_ints[0]}}, rate: [1, 1, 1, -1].choose / 2.0, finish: {{repeat_probs[(2) % repeat_probs|length]}}, amp: {{amp_values[0]}}
+            sample :{{sample_values[(1) % sample_values|length]}}, beat_stretch: {{repeat_small_ints[(1) % repeat_small_ints|length]}}
+            sleep {{sleep_values[0]}}
+          end
+        end
+      end
+    end
+  end
+end
+
+ 

@@ -1,0 +1,103 @@
+# Lorezzed
+
+# Coded by Sam Aaron
+
+use_bpm {{samples_bpm[0]}}
+notes = (scale :{{note_values[0]}}, :minor_pentatonic, num_octaves: 1).shuffle
+
+live_loop :lorezzed do
+  with_fx :{{effect_values[(0) % effect_values|length]}}, pan: -0.3, amp: {{amp_values[(0)%amp_values|length]}} do
+    tick_reset
+    t = {{sleep_values[0]}}
+    sleep -t
+    with_fx :{{effect_values[(5) % effect_values|length]}}, cutoff: rrand(100, 130) do
+      with_fx :{{effect_values[(6) % effect_values|length]}}, amp: {{amp_values[(1)%amp_values|length]}}  do
+        s = synth :{{synth_values[(0) % synth_values|length]}}, note: :{{note_values[(4) % note_values|length]}}, sustain: 4, note_slide: t, release: {{release_values[(0)%release_values|length]}}
+        {{repeat_small_ints[0]}}.times do
+          sleep {{sleep_values[(1) % sleep_values|length]}}
+          control s, note: notes.tick
+        end
+      end
+    end
+    sleep t
+  end
+end
+
+with_fx :{{effect_values[(7) % effect_values|length]}}, room: 1 do
+  live_loop :synth_attack do
+    tick
+    with_fx :{{effect_values[(1) % effect_values|length]}}, amp: {{amp_values[(2)%amp_values|length]}}, pan: {{repeat_probs[0]}} do
+      with_fx :{{effect_values[(8) % effect_values|length]}}, cutoff: (line 70, 131, steps: 32).look do
+        [1, 1, 1, 1, 1, 1, 1, 4].look.times do
+          with_fx :{{effect_values[(9) % effect_values|length]}}, reps: {{repeat_small_ints[0]}}, amp: {{amp_values[(3)%amp_values|length]}} do
+            synth :{{synth_values[(1) % synth_values|length]}}, note: :{{note_values[0]}}, amp: {{amp_values[(4)%amp_values|length]}}, release: rrand(0.05, 0.3), pan: rrand(-0.5, 0.5)
+            sleep [{{sleep_values[(2) % sleep_values|length]}}, {{sleep_values[(3) % sleep_values|length]}}].choose
+          end
+        end
+      end
+    end
+  end
+end
+
+with_fx :{{effect_values[(2) % effect_values|length]}} do
+  live_loop :industry do
+    sample :{{sample_values[(0) % sample_values|length]}}, beat_stretch: 1, lpf: 110, rate: 1, amp: {{amp_values[(5)%amp_values|length]}}
+    sleep {{sleep_values[(4) % sleep_values|length]}}
+  end
+end
+
+with_fx :{{effect_values[(3) % effect_values|length]}} do
+  live_loop :drive do
+    synth :{{synth_values[(2) % synth_values|length]}}, note: :{{note_values[(1) % note_values|length]}}, release: (knit 0.1, 8, 1, 8).tick, amp: {{amp_values[(6)%amp_values|length]}}, divisor: 1, depth: 1
+    sample :{{sample_values[(1) % sample_values|length]}}, amp: {{amp_values[(7)%amp_values|length]}}, lpf: 130, start: 0.14
+    sleep {{sleep_values[(5) % sleep_values|length]}}
+  end
+end
+
+live_loop :swirls do
+  tick
+  sample :{{sample_values[(2) % sample_values|length]}}, rate: [-0.5, 0.5].look, amp: rrand(1, 2.5)
+  with_fx :{{effect_values[(4) % effect_values|length]}} do
+    with_fx :{{effect_values[(10) % effect_values|length]}}, cutoff: (range 100, 130, steps: 8).look do
+      with_fx :{{effect_values[(11) % effect_values|length]}}, amp: {{amp_values[(9)%amp_values|length]}} do
+        synth :{{synth_values[(2) % synth_values|length]}}, note: (chord :{{note_values[(2) % note_values|length]}}, :{{character_values[0]}}), release: {{release_values[(1)%release_values|length]}}, amp: {{amp_values[(8)%amp_values|length]}}
+        synth :{{synth_values[(3) % synth_values|length]}}, note: :{{note_values[(3) % note_values|length]}}, release: {{release_values[(2)%release_values|length]}}
+      end
+    end
+  end
+  sleep {{sleep_values[(6) % sleep_values|length]}}
+end
+
+
+##|                                             ,~~~
+##|                                             +~~~~~
+##|                                             ?~~~~+~
+##|                                             8~~~~~+~,
+##|                                             O~~~~~=+==
+##|                                             8?~~~~=+=~~
+##|                                             NI=~~~~~~~~~
+##|                                             DO?~~=7I~~~~=
+##|                                             Z8?~~~~~~:+~?$I,           ,,,,,
+##|                                             ZNOI~~~~~~~~~~~.~7$$Z7:~~ZZZOSCZZ+,
+##|                                             ZDO7:~~~=~~~~~~~         $MZCSOZZ,~
+##|                                             ZDOOI~~?~~~~=====        ~DZO7
+##|                                             ~NDOO?~~~~~~~~~~~        ~7:$
+##|                                             :I OO$+~~~~==~~==~      ~? Z
+##|                                             DDDD8D?~~~~~~~====~    ~: I$
+##|                                            D DDDN8Z=~~~~~===~~~~  +   I`
+##|                                           ? DDDDN8O7~~~~~~~~====.7   $$
+##|                                            N888DNMOO?~~~~~===~~~$?  .?
+##|                                        O88+DM ~NNN88OI~~~~~=~~~+~~?/$
+##|                                         D  OVERTONE88I~~~~~===~~~,~
+##|                                         D  ~ INC.NNN888I~~~~~=~~==,
+##|                                         :I   ND~ DDN888O~~~?======,
+##|                                          8  8DDD ~ M88887:I~~=====
+##|                                          D 8DDDDND   D 88$~~~===+z
+##|                                          :D8MDDDNN     DD87~~I~+=
+##|                                           88DDDDDN       DD7?~~
+##|                                           $CLOJURE         DD`
+##|                                           $8DSDDDD
+##|                                           DDDCDDDN
+##|                                        ::7OLIBRARY$$$77I$IZ7
+
+ 

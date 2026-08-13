@@ -1,0 +1,42 @@
+# Shufflit
+
+# Coded by Sam Aaron
+
+use_debug false
+use_random_seed 667
+load_sample :{{sample_values[0]}}
+sleep {{sleep_values[0]}}
+
+live_loop :travelling do
+  use_synth :{{synth_values[(1) % synth_values|length]}}
+  notes = scale(:{{note_values[0]}}, :{{character_values[0]}}_pentatonic, num_octaves: 1)
+  use_random_seed 679
+  tick_reset_all
+  with_fx :{{effect_values[(1) % effect_values|length]}}, phase: {{repeat_probs[0]}}, mix: {{repeat_probs[(1) % repeat_probs|length]}}, reps: {{repeat_med_ints[(0) % repeat_med_ints|length]}} do
+    sleep {{sleep_values[(1) % sleep_values|length]}}
+    play notes.choose, attack: {{attack_values[0]}}, release: {{release_values[0]}}, pan: (range -1, 1, step: {{repeat_probs[0]}}).tick, amp: rrand(2, 2.5)
+  end
+end
+
+live_loop :comet, auto_cue: false do
+  if one_in 4
+    sample :{{sample_values[0]}}
+    puts :comet_landing
+  end
+  sleep {{sleep_values[(2) % sleep_values|length]}}
+end
+
+live_loop :shuff, auto_cue: false do
+  with_fx :{{effect_values[(4) % effect_values|length]}}, cutoff: {{repeat_med_ints[0]}}, reps: {{repeat_med_ints[(1) % repeat_med_ints|length]}} do
+    tick
+    sleep {{sleep_values[(3) % sleep_values|length]}}
+    sample :{{sample_values[(1) % sample_values|length]}}, amp: factor?(look, 8) ? 6 : 4
+    sleep {{sleep_values[(4) % sleep_values|length]}}
+    use_synth :{{synth_values[(1) % synth_values|length]}}
+    use_synth_defaults cutoff_attack: 1, cutoff_release: 0, env_curve: {{repeat_small_ints[(4) % repeat_small_ints|length]}}
+    play (knit :{{note_values[(3) % note_values|length]}}, 24, :{{note_values[(4) % note_values|length]}}, 8).look, release: 1.5, cutoff: (range 70, 90).look, amp: {{amp_values[(1)%amp_values|length]}} if factor?(look, 2)
+    sample :{{sample_values[(2) % sample_values|length]}}, rate: -1, sustain: {{repeat_small_ints[0]}}, release: (knit 0.05, 3, 0.5, 1).look
+  end
+end
+
+ 

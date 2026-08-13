@@ -1,0 +1,25 @@
+# Tron Bike
+
+# Coded by Sam Aaron
+
+use_random_seed 10
+notes =  (ring :{{note_values[(0) % note_values|length]}}, :{{note_values[(1) % note_values|length]}}, :{{note_values[(2) % note_values|length]}}, :{{note_values[(3) % note_values|length]}}, :{{note_values[(4) % note_values|length]}}, :{{note_values[(5) % note_values|length]}})
+
+live_loop :tron do
+  with_synth :{{synth_values[0]}} do
+    with_fx(:{{effect_values[0]}}, phase: [{{repeat_probs[2]}},{{repeat_probs[(3) % repeat_probs|length]}}].choose) do
+      with_fx(:{{effect_values[(1) % effect_values|length]}}, room: {{repeat_probs[(0) % repeat_probs|length]}}, mix: {{repeat_probs[(1) % repeat_probs|length]}}) do
+
+        n1 = (chord notes.choose, :{{character_values[(0) % character_values|length]}}).choose
+        n2 = (chord notes.choose, :{{character_values[(1) % character_values|length]}}).choose
+
+        p = play n1, amp: {{amp_values[0]}}, release: {{release_values[0]}}, note_slide: {{repeat_small_ints[0]}}, cutoff: {{repeat_med_ints[0]}}, cutoff_slide: 4, detune: rrand(0, 0.2)
+        control p, note: n2, cutoff: rrand(80, 120)
+      end
+    end
+  end
+
+  sleep {{sleep_values[0]}}
+end
+
+ 

@@ -1,0 +1,42 @@
+# Tilburg 2
+
+# Coded by Sam Aaron
+
+use_debug false
+load_samples :{{sample_values[0]}}, :bd_haus
+
+live_loop :low do
+  tick
+  synth :{{synth_values[0]}}, wave: {{repeat_small_ints[0]}}, phase: {{repeat_probs[0]}}, release: {{release_values[0]}}, note: (knit :{{note_values[(0) % note_values|length]}}, 12, :{{note_values[(1) % note_values|length]}}, 4).look, cutoff: (line 60, 120, steps: 6).look
+  sleep {{sleep_values[0]}}
+end
+
+with_fx :{{effect_values[0]}}, room: 1 do
+  live_loop :lands, auto_cue: false do
+    use_synth :{{synth_values[(1) % synth_values|length]}}
+    use_random_seed 310003
+    ns = (scale :{{note_values[(2) % note_values|length]}}, :{{character_values[0]}}_pentatonic, num_octaves: 4).take(4)
+    {{repeat_small_ints[(1) % repeat_small_ints|length]}}.times do
+      play ns.choose, detune: {{repeat_small_ints[(2) % repeat_small_ints|length]}}, release: {{release_values[0]}}, amp: {{amp_values[0]}}, amp: rand + 0.5, cutoff: rrand(70, 120), amp: {{amp_values[(1) % amp_values|length]}}
+      sleep {{sleep_values[(1) % sleep_values|length]}}
+    end
+  end
+end
+
+live_loop :fietsen do
+  sleep {{sleep_values[(2) % sleep_values|length]}}
+  sample :{{sample_values[(0) % sample_values|length]}}, rate: -1
+  sleep {{sleep_values[(3) % sleep_values|length]}}
+end
+
+live_loop :tijd do
+  sample :{{sample_values[(1) % sample_values|length]}}, amp: {{amp_values[(2) % amp_values|length]}}, cutoff: {{repeat_large_ints}}
+  sleep {{sleep_values[(4) % sleep_values|length]}}
+end
+
+live_loop :ind do
+  sample :{{sample_values[(2) % sample_values|length]}}, beat_stretch: 1
+  sleep {{sleep_values[(5) % sleep_values|length]}}
+end
+
+ 

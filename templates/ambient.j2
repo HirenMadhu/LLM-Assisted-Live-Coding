@@ -1,0 +1,21 @@
+# Ambient
+
+# Coded by Sam Aaron
+
+load_samples(sample_names :{{sample_names[0]}})
+sleep 2
+
+with_fx :{{effect_values[(0) % effect_values|length]}}, mix: {{repeat_probs[(0) % repeat_probs|length]}} do
+  live_loop :foo do
+    # try changing the sp_ vars..
+    sp_name = choose sample_names :{{sample_names[(1) % sample_names|length]}}
+    sp_time = [1, 2].choose
+    sp_rate = 1
+
+    s = sample sp_name, cutoff: rrand(70, 130), rate: sp_rate * choose([0.5, 1]), pan: rrand(-1, 1), pan_slide: sp_time
+    control s, pan: rrand(-1, 1)
+    sleep sp_time
+  end
+end
+
+ 

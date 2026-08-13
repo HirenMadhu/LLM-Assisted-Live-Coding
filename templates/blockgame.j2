@@ -1,0 +1,113 @@
+# Blockgame
+
+# Coded by DJ_Dave
+
+use_bpm {{repeat_large_ints[(0) % repeat_large_ints|length]}}
+
+live_loop :met1 do
+  sleep {{sleep_values[0]}}
+end
+
+cmaster1 = {{repeat_large_ints[(5) % repeat_large_ints|length]}}
+cmaster2 = {{repeat_large_ints[(6) % repeat_large_ints|length]}}
+
+define :pattern do |pattern|
+  return pattern.ring.tick == "x"
+end
+
+live_loop :kick, sync: :met1 do
+  ##| stop
+  a = {{amp_values[0]}}
+  sample :{{sample_values[(0)]}}, amp: a, cutoff: cmaster1 if pattern "x--x--x---x--x--"
+  sleep {{sleep_values[(1) % sleep_values|length]}}
+end
+
+with_fx :{{effect_values[(0) % effect_values|length]}}, mix: {{repeat_probs[(0) % repeat_probs|length]}} do
+  with_fx :{{effect_values[(1) % effect_values|length]}}, mix: {{repeat_probs[(1) % repeat_probs|length]}}, room: {{repeat_probs[(8) % repeat_probs|length]}} do
+    live_loop :clap, sync: :met1 do
+      ##| stop
+      a = {{amp_values[(1)%amp_values|length]}}
+      sleep {{sleep_values[(2) % sleep_values|length]}}
+      sample :{{sample_values[(1)%sample_values|length]}}, rate: 2.5, cutoff: cmaster1, amp: a
+      sample :{{sample_values[(2)%sample_values|length]}}, rate: 2.2, start: 0.02, cutoff: cmaster1, pan: {{repeat_probs[(3) % repeat_probs|length]}}, amp: a
+      sample :{{sample_values[(3)%sample_values|length]}}, rate: 2, start: 0.04, cutoff: cmaster1, pan: -{{repeat_probs[(3) % repeat_probs|length]}}, amp: a
+      sleep {{sleep_values[(3) % sleep_values|length]}}
+    end
+  end
+end
+
+with_fx :{{effect_values[(2) % effect_values|length]}}, mix: {{repeat_probs[(2) % repeat_probs|length]}} do
+  with_fx :{{effect_values[(3) % effect_values|length]}}, mix: {{repeat_probs[(3) % repeat_probs|length]}} do
+    live_loop :hhc1, sync: :met1 do
+      ##| stop
+      a = {{amp_values[(2)%amp_values|length]}}
+      p = [-0.3, 0.3].choose
+      sample :{{sample_values[(4)%sample_values|length]}}, amp: {{amp_values[(0)%amp_values|length]}}, rate: 2.5, finish: {{repeat_probs[(0) % repeat_probs|length]}}, pan: p, cutoff: cmaster2 if pattern "x-x-x-x-x-x-x-x-xxx-x-x-x-x-x-x-"
+      sleep {{sleep_values[(4) % sleep_values|length]}}
+    end
+  end
+end
+
+live_loop :hhc2, sync: :met1 do
+  ##| stop
+  a = {{amp_values[(3)%amp_values|length]}}
+  sleep {{sleep_values[(5) % sleep_values|length]}}
+  sample :{{sample_values[(5)%sample_values|length]}}, cutoff: cmaster2, rate: 1.2, start: 0.01, finish: {{repeat_probs[(1) % repeat_probs|length]}}, amp: a
+  sleep {{sleep_values[(6) % sleep_values|length]}}
+end
+
+with_fx :{{effect_values[(4) % effect_values|length]}}, mix: {{repeat_probs[(4) % repeat_probs|length]}} do
+  live_loop :crash, sync: :met1 do
+    ##| stop
+    a = {{amp_values[(4)%amp_values|length]}}
+    c = cmaster2-10
+    r = {{release_values[(1) % release_values|length]}}
+    f = {{repeat_probs[(2) % repeat_probs|length]}}
+    crash = :{{sample_values[(6)%sample_values|length]}}
+    sleep {{sleep_values[(7) % sleep_values|length]}}
+    sample crash, amp: a, cutoff: c, rate: r, finish: f
+    sample crash, amp: a, cutoff: c, rate: r-0.2, finish: f
+    sleep {{sleep_values[(8) % sleep_values|length]}}
+    sample crash, amp: a, cutoff: c, rate: r, finish: f
+    sample crash, amp: a, cutoff: c, rate: r-0.2, finish: f
+    sleep {{sleep_values[(9) % sleep_values|length]}}
+  end
+end
+
+with_fx :{{effect_values[(5) % effect_values|length]}}, mix: {{repeat_probs[(3) % repeat_probs|length]}} do
+  live_loop :arp, sync: :met1 do
+    with_fx :{{effect_values[(6) % effect_values|length]}}, phase: 1, mix: (line 0.1, 1, steps: 128).mirror.tick do
+      ##| stop
+      a = {{amp_values[(5)%amp_values|length]}}
+      r = {{release_values[(0) % release_values|length]}}
+      c = {{repeat_large_ints[(0) % repeat_large_ints|length]}}
+      p = (line -0.7, 0.7, steps: 64).mirror.tick
+      at = {{attack_values[(0)%attack_values|length]}}
+      use_synth :{{synth_values[(0) % synth_values|length]}}
+      tick
+      notes = (scale :g4, :major_pentatonic).shuffle
+      play notes.look, amp: a, release: r, cutoff: c, pan: p, attack: at
+      sleep {{sleep_values[(10) % sleep_values|length]}}
+    end
+  end
+end
+
+with_fx :{{effect_values[(7) % effect_values|length]}}, mix: {{repeat_probs[(5) % repeat_probs|length]}} do
+  with_fx :{{effect_values[(8) % effect_values|length]}}, mix: {{repeat_probs[(6) % repeat_probs|length]}} do
+    live_loop :synthbass, sync: :met1 do
+      ##| stop
+      c = {{repeat_large_ints[(1) % repeat_large_ints|length]}}
+      a = {{amp_values[(6)%amp_values|length]}}
+      at = {{attack_values[(1)%attack_values|length]}}
+      use_synth :{{synth_values[(2) % synth_values|length]}}
+      play :g3, sustain: 6, cutoff: c, amp: a, attack: at
+      sleep {{sleep_values[(11) % sleep_values|length]}}
+      play :d3, sustain: 2, cutoff: c, amp: a, attack: at
+      sleep {{sleep_values[(12) % sleep_values|length]}}
+      play :e3, sustain: 8, cutoff: c, amp: a, attack: at
+      sleep {{sleep_values[(12) % sleep_values|length]}}
+    end
+  end
+end
+
+ 

@@ -1,0 +1,14 @@
+# Idm Breakbeat
+
+# Coded by Sam Aaron
+
+live_loop :idm_bb do
+  n = [{{repeat_small_ints[0]}},{{repeat_small_ints[(1)%repeat_small_ints|length]}},{{repeat_small_ints[(2)%repeat_small_ints|length]}},{{repeat_small_ints[(3)%repeat_small_ints|length]}},{{repeat_small_ints[(4)%repeat_small_ints|length]}}].choose
+  sample :{{sample_values[0]}}, amp: {{amp_values[(2) % amp_values|length]}}
+  sample :{{sample_values[(1) % sample_values|length]}}, rate: [0.25, 0.5, 0.125, 1].choose, amp: {{amp_values[(0) % amp_values|length]}} if one_in(8)
+  sample :{{sample_values[(2) % sample_values|length]}}, rate: [0.5, 0.125, 1, -1, -0.5].choose, amp: {{amp_values[(1) % amp_values|length]}} if one_in(8)
+  sample :{{sample_values[(3) % sample_values|length]}}, attack: {{attack_values[0]}}, release: {{release_values[0]}}, start: 1 - (1.0 / n), rate: [1,1,1,1,1,1,-1].choose
+  sleep sample_duration(:{{sample_values[(3) % sample_values|length]}}) / n
+end
+
+ 

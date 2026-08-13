@@ -1,0 +1,61 @@
+# Acid
+
+# Coded by Sam Aaron
+
+use_debug false
+load_sample :{{sample_values[(0)]}}
+
+{{repeat_small_ints[(0) % repeat_small_ints|length]}}.times do
+  sample :{{sample_values[(0)]}}, amp: (line 0, 5, steps: 8).tick
+  sleep {{sleep_values[(0) % sleep_values|length]}}
+end
+
+live_loop :drums do
+  sample :{{sample_values[(0)]}}, amp: {{amp_values[0]}}
+  sleep {{sleep_values[(1) % sleep_values|length]}}
+end
+
+live_loop :acid do
+  cue :foo
+  {{repeat_small_ints[(1) % repeat_small_ints|length]}}.times do |i|
+    use_random_seed 667
+    {{repeat_small_ints[(2) % repeat_small_ints|length]}}.times do
+      use_synth :{{synth_values[(0) % synth_values|length]}}
+      play chord(:{{note_values[(0) % note_values|length]}}, :{{character_values[(0) % character_values|length]}}).choose, attack: {{attack_values[(0) % attack_values|length]}}, release: {{release_values[(0) % release_values|length]}}, cutoff: rrand_i(50, 90) + i * 10
+      sleep {{sleep_values[(2) % sleep_values|length]}}
+    end
+  end
+
+  cue :bar
+  {{repeat_small_ints[(3) % repeat_small_ints|length]}}.times do |i|
+    use_synth :{{synth_values[(1) % synth_values|length]}}
+    play chord(:{{note_values[(1) % note_values|length]}}, :{{character_values[(1) % character_values|length]}}).choose, attack: {{attack_values[(1) % attack_values|length]}}, release: {{release_values[(1) % release_values|length]}}, cutoff: rrand_i(70, 98) + i, res: rrand(0.9, 0.95)
+    sleep {{sleep_values[(3) % sleep_values|length]}}
+  end
+
+  cue :baz
+  with_fx :{{effect_values[(0) % effect_values|length]}}, mix: 0.3 do |r|
+    {{repeat_small_ints[(4) % repeat_small_ints|length]}}.times do |m|
+      control r, mix: 0.3 + (0.5 * (m.to_f / 32.0)) unless m == 0 if m % 8 == 0
+      use_synth :{{synth_values[(2) % synth_values|length]}}
+      play chord(:{{note_values[(1) % note_values|length]}}, :{{character_values[(2) % character_values|length]}}).choose, attack: {{attack_values[(2) % attack_values|length]}}, release: {{release_values[(2) % release_values|length]}}, cutoff: rrand_i(110, 130)
+      sleep {{sleep_values[(4) % sleep_values|length]}}
+    end
+  end
+
+  cue :quux
+  in_thread do
+    use_random_seed 668
+    with_fx :{{effect_values[(1) % effect_values|length]}}, phase: 0.125 do
+      {{repeat_small_ints[(5) % repeat_small_ints|length]}}.times do
+        use_synth :{{synth_values[(3) % synth_values|length]}}
+        play chord(:{{note_values[(2) % note_values|length]}}, :{{character_values[(3) % character_values|length]}}).choose, attack: {{attack_values[(3) % attack_values|length]}}, release: {{release_values[(3) % release_values|length]}}, cutoff: rrand(50, 100)
+        sleep {{sleep_values[(5) % sleep_values|length]}}
+      end
+    end
+  end
+
+  sleep {{sleep_values[(6) % sleep_values|length]}}
+end
+
+ 

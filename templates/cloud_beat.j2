@@ -1,0 +1,119 @@
+# Cloud Beat
+
+# Coded by SonicPit
+#
+# Taken from "Beats basteln wie die Großen"
+# c't 13/2017
+
+# Note: requires a powerful machine to run smoothly.
+
+use_bpm {{samples_bpm[0]}}
+
+# HISS
+live_loop :hiss_loop do
+  sample :{{sample_values[0]}}, amp: {{amp_values[(0) % amp_values|length]}}
+  sleep sample_duration :{{sample_values[0]}}
+end
+
+# HIHAT
+define :hihat do
+  use_synth :{{synth_values[(0) % synth_values|length]}}
+  with_fx :{{effect_values[(0)%effect_values|length]}}, cutoff: {{repeat_large_ints[(1) % repeat_large_ints|length]}} do
+    play release: {{release_values[0]}}, amp: {{amp_values[(1) % amp_values|length]}}
+  end
+end
+
+live_loop :hihat_loop do
+  divisors = ring 2, 4, 2, 2, 2, 2, 2, 6
+  divisors.tick.times do
+    hihat
+    sleep {{sleep_values[0]}} / divisors.look
+  end
+end
+
+# SNARE
+live_loop :snare_loop do
+  sleep ring(2.5, 3)[tick]
+  with_fx :{{effect_values[(1)%effect_values|length]}}, cutoff: {{repeat_large_ints[0]}} do
+    sample :{{sample_values[(1)%sample_values|length]}}, sustain: 0, release: {{release_values[(1)%release_values|length]}}, amp: {{amp_values[(6) % amp_values|length]}}
+  end
+  sleep ring(1.5, 1)[look]
+end
+
+# BASSDRUM
+define :bassdrum do |note1, duration, note2 = note1|
+  use_synth :{{synth_values[(1) % synth_values|length]}}
+  with_fx :{{effect_values[(2)%effect_values|length]}}, cutoff: {{repeat_large_ints[0]}} do
+    play note1 + 24, amp: {{amp_values[(2) % amp_values|length]}}, release: {{release_values[(2)%release_values|length]}}
+  end
+  with_fx :{{effect_values[(3)%effect_values|length]}}, distort: {{repeat_probs[(2) % repeat_probs|length]}}, mix: {{repeat_probs[(1) % repeat_probs|length]}} do
+    with_fx :{{effect_values[(4)%effect_values|length]}}, cutoff: {{repeat_large_ints[(1)%repeat_probs|length]}} do
+      with_fx :{{effect_values[(5)%effect_values|length]}}, cutoff: {{repeat_large_ints[(2)%repeat_probs|length]}} do
+        bass = play note1, amp: {{amp_values[(3) % amp_values|length]}}, release: duration, note_slide: duration
+        control bass, note: note2
+      end
+    end
+  end
+  sleep duration
+end
+
+live_loop :bassdrum_schleife do
+  bassdrum :{{note_values[(0) % note_values|length]}}, {{release_values[(3)%release_values|length]}}
+  if bools(0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0)[tick]
+    bassdrum :{{note_values[(1) % note_values|length]}}, {{release_values[(4)%release_values|length]}}, :{{note_values[(5) % note_values|length]}}
+    bassdrum :{{note_values[(2) % note_values|length]}}, {{release_values[(5)%release_values|length]}}, :{{note_values[(6) % note_values|length]}}
+  else
+    bassdrum :{{note_values[(3) % note_values|length]}}, {{release_values[(6)%release_values|length]}}
+  end
+  bassdrum :{{note_values[(4) % note_values|length]}}, {{release_values[(7)%release_values|length]}}, ring(10, 10, 10, 40)[look]
+end
+
+# CHORD CONTROL
+# This part provides two rings called "chord_high" and "chord_low".
+# They always contain the "permitted" notes in order that everything will be in tune.
+# You can use them in other live loops to select notes.
+
+chord_1 = chord :{{note_values[(6) % note_values|length]}}, :{{character_values[(0) % character_values|length]}}, num_octaves: 2
+chord_2 = chord :{{note_values[(7) % note_values|length]}}, :{{character_values[(1) % character_values|length]}}, num_octaves: 2
+chord_3 = chord :{{note_values[(8) % note_values|length]}}, :{{character_values[(2) % character_values|length]}}, num_octaves: 2
+chord_4 = chord :{{note_values[(9) % note_values|length]}}, :{{character_values[(3) % character_values|length]}}, num_octaves: 2
+
+chord_low_1 = chord :{{note_values[(10) % note_values|length]}}, :{{character_values[(4) % character_values|length]}}
+chord_low_2 = chord :{{note_values[(11) % note_values|length]}}, :{{character_values[(5) % character_values|length]}}
+chord_low_3 = chord :{{note_values[(12) % note_values|length]}}, :{{character_values[(6) % character_values|length]}}
+chord_low_4 = chord :{{note_values[(12) % note_values|length]}}, :{{character_values[(7) % character_values|length]}}
+
+chord_high = chord_1
+chord_low = chord_low_1
+
+live_loop :chord_selector, delay: -{{repeat_probs[0]}} do
+  chord_high = (knit(chord_1, 2, chord_2, 2, chord_3, 4,chord_4, 4)).tick
+  chord_low = (knit(chord_low_1, 2, chord_low_2, 2, chord_low_3, 4, chord_low_4, 4)).look
+  sleep {{sleep_values[(1)%sleep_values|length]}}
+end
+
+# SPHERES
+define :chord_player do |the_chord|
+  use_synth :{{synth_values[(2) % synth_values|length]}}
+  the_chord.each do |note|
+    play note, attack: rand(4), release: rand(6..8), cutoff: rand(50..85), vibrato_rate: rand(0.01..2), amp: {{amp_values[(7) % amp_values|length]}}
+  end
+end
+
+with_fx :{{effect_values[(6)%effect_values|length]}}, room: 0.99, mix: 0.7 do
+  live_loop :chord_loop do
+    chord_player chord_high.pick(6)
+    chord_player chord_low.take(3)
+    sleep {{sleep_values[(2)%sleep_values|length]}}
+  end
+end
+
+# Coded by Pit Noack
+# supported by
+# Alexander Degraf
+# Astrid Hagenguth
+# Enrico Mercaldi
+# http://www.maschinennah.de/
+# mail@pitnoack.de
+
+ 

@@ -1,0 +1,32 @@
+# Rerezzed
+
+# Coded by Sam Aaron
+
+use_debug false
+notes = (scale :{{note_values[0]}}, :{{character_values[0]}}_pentatonic, num_octaves: 2).shuffle
+
+live_loop :rerezzed do
+  tick_reset
+  t = {{sleep_values[0]}}
+  sleep -t
+  with_fx :{{effect_values[0]}} do
+    s = synth :{{synth_values[0]}}, note: :{{note_values[(1) % note_values|length]}}, sustain: {{repeat_small_ints[(0) % repeat_small_ints|length]}}, note_slide: t, release: {{release_values[(0) % release_values|length]}}
+    {{repeat_med_ints[0]}}.times do
+      sleep {{sleep_values[(3) % sleep_values|length]}}
+      control s, note: notes.tick
+    end
+  end
+  sleep t
+end
+
+live_loop :industry do
+  sample :loop_industrial, beat_stretch: 1
+  sleep {{sleep_values[(1) % sleep_values|length]}}
+end
+
+live_loop :drive do
+  sample :bd_haus, amp: {{amp_values[0]}}
+  sleep {{sleep_values[(2) % sleep_values|length]}}
+end
+
+ 

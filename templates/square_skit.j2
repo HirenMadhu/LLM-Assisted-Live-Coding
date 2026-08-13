@@ -1,0 +1,41 @@
+# Square Skit
+
+# Coded by Sam Aaron
+
+use_debug false
+
+live_loop :skit do
+  with_fx :{{effect_values[(3) % effect_values|length]}}, phase: {{repeat_small_ints[0]}}, invert_wave: 1, wave: 0 do
+    with_fx :{{effect_values[(1) % effect_values|length]}}, wave: 0, phase: {{repeat_probs[0]}} do
+      sample :{{sample_values[(0) % sample_values|length]}}, rate: {{repeat_small_ints[0]}}, amp: {{amp_values[(0)%amp_values|length]}}
+    end
+    sleep {{sleep_values[0]}}
+  end
+end
+
+live_loop :foo, auto_cue: false do
+  tick(:note) if factor? tick, 4
+  use_synth :square
+  density 2 do
+    play (knit :{{note_values[(0)%note_values|length]}}, 2, :{{note_values[(1)%note_values|length]}}, 1, :{{note_values[(2)%note_values|length]}}, 1).look(:note), release: {{release_values[0]}}, attack: {{attack_values[0]}}, amp: {{amp_values[0]}}, cutoff: rrand_i(70, 130)
+    sleep {{sleep_values[(1)%sleep_values|length]}}
+  end
+end
+
+live_loop :kik, auto_cue: false do
+  density 1 do
+    sample :{{sample_values[(1) % sample_values|length]}}, amp: {{amp_values[(3)%amp_values|length]}}
+    sleep {{sleep_values[(2)%sleep_values|length]}}
+  end
+end
+
+live_loop :piano, auto_cue: false do
+  sleep {{sleep_values[(3)%sleep_values|length]}}
+  with_fx :{{effect_values[(2) % effect_values|length]}}, phase: {{repeat_probs[(1)%repeat_probs|length]}}, wave: 1 do
+    sleep {{sleep_values[(4)%sleep_values|length]}}
+    sample :{{sample_values[(2) % sample_values|length]}}, amp: {{amp_values[(4)%amp_values|length]}}
+  end
+end
+
+ 
+{{sample_values[(0) % sample_values|length]}}

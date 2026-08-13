@@ -1,0 +1,87 @@
+{
+  "scenario_root": "../s2-drum",
+  "metric": "cosine",
+  "k": 3,
+  "groups": {
+    "3-cand": {
+      "N": 3,
+      "wav_pairwise_stats": {
+        "min": 0.014675140380859375,
+        "max": 0.40746766328811646,
+        "mean": 0.26383858919143677,
+        "median": 0.3693729639053345,
+        "std": 0.1768702268600464
+      }
+    },
+    "10-cand": {
+      "N": 10,
+      "pairwise_stats": {
+        "wav_pairwise_stats": {
+          "min": 0.004784047603607178,
+          "max": 0.46165579557418823,
+          "mean": 0.09478893876075745,
+          "median": 0.01706373691558838,
+          "std": 0.15657182037830353
+        },
+        "raw_code_pairwise_stats": {
+          "min": 8.314847946166992e-05,
+          "max": 0.024907708168029785,
+          "mean": 0.013726710341870785,
+          "median": 0.013271927833557129,
+          "std": 0.006580229848623276
+        },
+        "aligned_code_pairwise_stats": {
+          "min": 0.028568387031555176,
+          "max": 1.1091015338897705,
+          "mean": 0.3251902461051941,
+          "median": 0.1641501784324646,
+          "std": 0.3127710819244385
+        }
+      },
+      "diverse_subset_agreement": {
+        "gold_indices": [
+          2,
+          3,
+          6
+        ],
+        "pred_aligned_indices": [
+          2,
+          6,
+          5
+        ],
+        "pred_raw_indices": [
+          2,
+          4,
+          5
+        ],
+        "exact_match_aligned": 0.0,
+        "exact_match_raw": 0.0,
+        "overlap3_aligned": 0.6666666666666666,
+        "overlap3_raw": 0.3333333333333333,
+        "jaccard_aligned": 0.5,
+        "jaccard_raw": 0.2
+      },
+      "pairwise_distance_profile_spearman": {
+        "aligned_vs_wav": 0.7486166007905137,
+        "raw_vs_wav": 0.5093544137022398
+      },
+      "selected_indices_detail": {
+        "gold_wav": [
+          2,
+          3,
+          6
+        ],
+        "pred_aligned_code": [
+          2,
+          6,
+          5
+        ],
+        "pred_raw_code": [
+          2,
+          4,
+          5
+        ]
+      }
+    }
+  }
+}

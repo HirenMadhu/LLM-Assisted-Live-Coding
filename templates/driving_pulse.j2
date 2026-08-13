@@ -1,0 +1,23 @@
+# Driving Pulse
+
+# Coded by Sam Aaron
+
+load_sample :{{sample_values[0]}}
+
+live_loop :drums do
+  sample :{{sample_values[0]}}, rate: {{repeat_probs[(2) % repeat_probs|length]}}
+  sleep {{sleep_values[(0) % sleep_values|length]}}
+  sample :{{sample_values[0]}}
+  sleep {{sleep_values[(0) % sleep_values|length]}}
+end
+
+live_loop :synths do
+  use_synth :{{synth_values[0]}}
+  use_synth_defaults amp: {{amp_values[0]}}, mod_range: {{repeat_small_ints[0]}}, cutoff: {{repeat_large_ints[0]}}, pulse_width: {{repeat_probs[(1) % repeat_probs|length]}}, attack: {{attack_values[0]}}, release: {{release_values[0]}},  mod_phase: {{repeat_probs[0]}}, mod_invert_wave: 1
+  play {{repeat_med_ints[0]}}
+  sleep {{sleep_values[(1) % sleep_values|length]}}
+  play {{repeat_med_ints[1]}}
+  sleep {{sleep_values[(1) % sleep_values|length]}}
+end
+
+ 

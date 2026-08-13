@@ -1,0 +1,41 @@
+# Blimp Zones
+
+# Coded by Sam Aaron
+
+use_debug false
+use_random_seed 667
+load_sample :{{sample_values[0]}}
+sleep {{sleep_values[(0) % sleep_values|length]}}
+
+live_loop :foo do
+  with_fx :{{effect_values[(0) % effect_values|length]}}, kill_delay: {{repeat_probs[0]}}, room: {{repeat_probs[(0) % repeat_probs|length]}} do
+    {{repeat_small_ints[(0) % repeat_small_ints|length]}}.times do
+      use_random_seed 4000
+      {{repeat_small_ints[(1) % repeat_small_ints|length]}}.times do
+        sleep {{sleep_values[(1) % sleep_values|length]}}
+        play chord(:{{note_values[0]}}, :{{character_values[0]}}).choose, release: 0.1, pan: rrand(-1, 1, res: 0.9), amp: {{amp_values[0]}}
+      end
+    end
+  end
+end
+
+live_loop :bar, auto_cue: false do
+  if rand < 0.25
+    sample :{{sample_values[0]}}
+    puts :comet_landing
+  end
+  sleep {{sleep_values[(2) % sleep_values|length]}}
+end
+
+live_loop :baz, auto_cue: false do
+  tick
+  sleep {{sleep_values[(3) % sleep_values|length]}}
+  cue :beat, count: look
+  sample :bd_haus, amp: factor?(look, 8) ? 3 : 2
+  sleep {{sleep_values[(4) % sleep_values|length]}}
+  use_synth :fm
+  play :e2, release: 1, amp: 1 if factor?(look, 4)
+  synth :noise, release: 0.051, amp: 0.5
+end
+
+ 

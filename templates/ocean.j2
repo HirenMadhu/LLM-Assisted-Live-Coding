@@ -1,0 +1,13 @@
+# Ocean
+
+# Coded by Sam Aaron
+
+with_fx :{{effect_values[0]}}, mix: {{repeat_probs[(0) % repeat_probs|length]}} do
+  live_loop :oceans do
+    s = synth [:{{synth_values[0]}}, :{{synth_values[(1) % synth_values|length]}}, :{{synth_values[(2) % synth_values|length]}}].choose, amp: rrand({{amp_values[(0) % amp_values|length]}}, {{amp_values[(1) % amp_values|length]}}), attack: rrand({{attack_values[(1) % attack_values|length]}}, {{attack_values[(1) % attack_values|length]}}), sustain: rrand(0, 2), release: rrand({{release_values[(1) % release_values|length]}}, {{release_values[(1) % release_values|length]}}), cutoff_slide: rrand(0, 5), cutoff: rrand(60, 100), pan: rrand(-1, 1), pan_slide: rrand(1, 5), amp: rrand({{amp_values[(2) % amp_values|length]}}, {{amp_values[(3) % amp_values|length]}})
+    control s, pan: rrand(-1, 1), cutoff: rrand(60, 110)
+    sleep rrand(2, 4)
+  end
+end
+
+ 

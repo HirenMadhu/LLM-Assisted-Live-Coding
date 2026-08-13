@@ -1,0 +1,6 @@
+# Coded by Sam Aaron
+
+live_loop :haunted do
+  sample :{{sample_values[0]}}, rate: rrand(-{{repeat_small_ints[(1) % repeat_small_ints|length]}}, {{repeat_small_ints[(2) % repeat_small_ints|length]}})
+  sleep rrand({{repeat_probs[0]}}, {{repeat_small_ints[0]}})
+end

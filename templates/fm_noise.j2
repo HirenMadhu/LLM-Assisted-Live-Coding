@@ -1,0 +1,13 @@
+# Fm Noise
+
+# Coded by Sam Aaron
+
+use_synth :fm
+
+live_loop :sci_fi do
+  p = play (chord :{{note_values[0]}}, :{{character_values[0]}}).choose - [0, 12, -12].choose, divisor: {{repeat_probs[0]}}, div_slide: rrand(0, 10), depth: rrand(0.001, 2), attack: {{attack_values[0]}}, release: rrand(0, 5), amp: {{amp_values[0]}}
+  control p, divisor: rrand(0.001, 50)
+  sleep [{{sleep_values[(0) % sleep_values|length]}}, {{sleep_values[(1) % sleep_values|length]}}, {{sleep_values[(2) % sleep_values|length]}}].choose
+end
+
+ 

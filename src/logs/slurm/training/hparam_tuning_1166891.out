@@ -1,0 +1,3598 @@
+no change     /apps/software/2022b/software/miniconda/24.11.3/condabin/conda
+no change     /apps/software/2022b/software/miniconda/24.11.3/bin/conda
+no change     /apps/software/2022b/software/miniconda/24.11.3/bin/conda-env
+no change     /apps/software/2022b/software/miniconda/24.11.3/bin/activate
+no change     /apps/software/2022b/software/miniconda/24.11.3/bin/deactivate
+no change     /apps/software/2022b/software/miniconda/24.11.3/etc/profile.d/conda.sh
+no change     /apps/software/2022b/software/miniconda/24.11.3/etc/fish/conf.d/conda.fish
+no change     /apps/software/2022b/software/miniconda/24.11.3/shell/condabin/Conda.psm1
+no change     /apps/software/2022b/software/miniconda/24.11.3/shell/condabin/conda-hook.ps1
+no change     /apps/software/2022b/software/miniconda/24.11.3/lib/python3.12/site-packages/xontrib/conda.xsh
+no change     /apps/software/2022b/software/miniconda/24.11.3/etc/profile.d/conda.csh
+no change     /home/hm638/.bashrc
+No action taken.
+Starting sweep with 256 runs;
+[1/256] -> hd_256_od_128_nl_3_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0850 $\pm$ 0.0060
+Average CCA: 86.3011 $\pm$ 0.5954
+**********************
+After aligning!!
+====================
+Average CKA: 0.4843 $\pm$ 0.0348
+Average CCA: 102.0940 $\pm$ 2.2221
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_102p7130_bestCKA_0p4297ppt
+[2/256] -> hd_256_od_128_nl_3_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0837 $\pm$ 0.0052
+Average CCA: 86.1337 $\pm$ 0.7985
+**********************
+After aligning!!
+====================
+Average CKA: 0.5053 $\pm$ 0.0141
+Average CCA: 124.5052 $\pm$ 3.4723
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_127p2433_bestCKA_0p4956ppt
+[3/256] -> hd_256_od_128_nl_3_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0774 $\pm$ 0.0015
+Average CCA: 86.0507 $\pm$ 0.2927
+**********************
+After aligning!!
+====================
+Average CKA: 0.4813 $\pm$ 0.0361
+Average CCA: 126.5215 $\pm$ 1.5255
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_124p8920_bestCKA_0p4891ppt
+[4/256] -> hd_256_od_128_nl_3_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0816 $\pm$ 0.0047
+Average CCA: 85.9237 $\pm$ 0.2298
+**********************
+After aligning!!
+====================
+Average CKA: 0.5123 $\pm$ 0.0245
+Average CCA: 128.1809 $\pm$ 2.0760
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_130p4406_bestCKA_0p5402ppt
+[5/256] -> hd_256_od_128_nl_3_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0813 $\pm$ 0.0046
+Average CCA: 85.9232 $\pm$ 0.3533
+**********************
+After aligning!!
+====================
+Average CKA: 0.4932 $\pm$ 0.0208
+Average CCA: 101.7760 $\pm$ 3.6087
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_103p0843_bestCKA_0p4999ppt
+[6/256] -> hd_256_od_128_nl_3_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0863 $\pm$ 0.0028
+Average CCA: 86.0861 $\pm$ 0.2868
+**********************
+After aligning!!
+====================
+Average CKA: 0.5236 $\pm$ 0.0216
+Average CCA: 126.7167 $\pm$ 4.6250
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_125p5771_bestCKA_0p5119ppt
+[7/256] -> hd_256_od_128_nl_3_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0827 $\pm$ 0.0040
+Average CCA: 85.7961 $\pm$ 0.6523
+**********************
+After aligning!!
+====================
+Average CKA: 0.5198 $\pm$ 0.0224
+Average CCA: 128.5647 $\pm$ 4.2738
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_136p1313_bestCKA_0p5410ppt
+[8/256] -> hd_256_od_128_nl_3_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0817 $\pm$ 0.0052
+Average CCA: 86.0565 $\pm$ 0.2542
+**********************
+After aligning!!
+====================
+Average CKA: 0.5162 $\pm$ 0.0270
+Average CCA: 130.7797 $\pm$ 4.2810
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_136p6527_bestCKA_0p4984ppt
+[9/256] -> hd_256_od_128_nl_3_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0796 $\pm$ 0.0066
+Average CCA: 86.2587 $\pm$ 0.8155
+**********************
+After aligning!!
+====================
+Average CKA: 0.5431 $\pm$ 0.0612
+Average CCA: 66.0974 $\pm$ 3.7398
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_60p2488_bestCKA_0p6004ppt
+[10/256] -> hd_256_od_128_nl_3_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0850 $\pm$ 0.0048
+Average CCA: 86.1993 $\pm$ 0.6481
+**********************
+After aligning!!
+====================
+Average CKA: 0.5243 $\pm$ 0.0393
+Average CCA: 74.6442 $\pm$ 3.5305
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_71p7360_bestCKA_0p5271ppt
+[11/256] -> hd_256_od_128_nl_3_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0876 $\pm$ 0.0031
+Average CCA: 85.8983 $\pm$ 0.6960
+**********************
+After aligning!!
+====================
+Average CKA: 0.5092 $\pm$ 0.0257
+Average CCA: 77.7800 $\pm$ 3.0560
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_80p6331_bestCKA_0p5284ppt
+[12/256] -> hd_256_od_128_nl_3_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0814 $\pm$ 0.0059
+Average CCA: 85.8858 $\pm$ 0.2614
+**********************
+After aligning!!
+====================
+Average CKA: 0.4965 $\pm$ 0.0348
+Average CCA: 77.5674 $\pm$ 3.2396
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_77p6139_bestCKA_0p5253ppt
+[13/256] -> hd_256_od_128_nl_3_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0821 $\pm$ 0.0035
+Average CCA: 86.0242 $\pm$ 0.2767
+**********************
+After aligning!!
+====================
+Average CKA: 0.4834 $\pm$ 0.0299
+Average CCA: 67.1680 $\pm$ 2.2870
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_69p6187_bestCKA_0p5074ppt
+[14/256] -> hd_256_od_128_nl_3_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0821 $\pm$ 0.0043
+Average CCA: 86.4940 $\pm$ 0.9378
+**********************
+After aligning!!
+====================
+Average CKA: 0.5169 $\pm$ 0.0301
+Average CCA: 75.7885 $\pm$ 4.1029
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_78p0658_bestCKA_0p5044ppt
+[15/256] -> hd_256_od_128_nl_3_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0811 $\pm$ 0.0017
+Average CCA: 85.9936 $\pm$ 0.5738
+**********************
+After aligning!!
+====================
+Average CKA: 0.5065 $\pm$ 0.0225
+Average CCA: 78.4792 $\pm$ 3.3426
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_82p5298_bestCKA_0p5197ppt
+[16/256] -> hd_256_od_128_nl_3_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0853 $\pm$ 0.0080
+Average CCA: 86.0385 $\pm$ 0.5515
+**********************
+After aligning!!
+====================
+Average CKA: 0.5121 $\pm$ 0.0381
+Average CCA: 79.4187 $\pm$ 3.7640
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_78p7607_bestCKA_0p4606ppt
+[17/256] -> hd_256_od_128_nl_3_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0874 $\pm$ 0.0051
+Average CCA: 86.0227 $\pm$ 0.4346
+**********************
+After aligning!!
+====================
+Average CKA: 0.5222 $\pm$ 0.0472
+Average CCA: 80.8082 $\pm$ 4.3152
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_73p9709_bestCKA_0p5947ppt
+[18/256] -> hd_256_od_128_nl_3_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0874 $\pm$ 0.0048
+Average CCA: 85.6991 $\pm$ 0.5098
+**********************
+After aligning!!
+====================
+Average CKA: 0.5281 $\pm$ 0.0323
+Average CCA: 101.8209 $\pm$ 4.8957
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_107p3903_bestCKA_0p5571ppt
+[19/256] -> hd_256_od_128_nl_3_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0803 $\pm$ 0.0054
+Average CCA: 86.1523 $\pm$ 0.8100
+**********************
+After aligning!!
+====================
+Average CKA: 0.4864 $\pm$ 0.0300
+Average CCA: 104.5230 $\pm$ 1.9074
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_107p5976_bestCKA_0p5330ppt
+[20/256] -> hd_256_od_128_nl_3_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0838 $\pm$ 0.0050
+Average CCA: 85.7758 $\pm$ 0.1498
+**********************
+After aligning!!
+====================
+Average CKA: 0.5128 $\pm$ 0.0282
+Average CCA: 104.8241 $\pm$ 3.3638
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_109p9587_bestCKA_0p5260ppt
+[21/256] -> hd_256_od_128_nl_3_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0867 $\pm$ 0.0069
+Average CCA: 86.1483 $\pm$ 0.3696
+**********************
+After aligning!!
+====================
+Average CKA: 0.4551 $\pm$ 0.0316
+Average CCA: 84.6625 $\pm$ 3.1197
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_79p6169_bestCKA_0p4736ppt
+[22/256] -> hd_256_od_128_nl_3_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0863 $\pm$ 0.0016
+Average CCA: 86.2373 $\pm$ 0.2744
+**********************
+After aligning!!
+====================
+Average CKA: 0.4751 $\pm$ 0.0217
+Average CCA: 104.0358 $\pm$ 2.8471
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_103p5082_bestCKA_0p4725ppt
+[23/256] -> hd_256_od_128_nl_3_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0806 $\pm$ 0.0034
+Average CCA: 86.0081 $\pm$ 0.5445
+**********************
+After aligning!!
+====================
+Average CKA: 0.5180 $\pm$ 0.0353
+Average CCA: 100.9042 $\pm$ 2.8006
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_98p0943_bestCKA_0p5299ppt
+[24/256] -> hd_256_od_128_nl_3_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0779 $\pm$ 0.0035
+Average CCA: 86.4407 $\pm$ 0.6623
+**********************
+After aligning!!
+====================
+Average CKA: 0.4726 $\pm$ 0.0296
+Average CCA: 100.1462 $\pm$ 2.5923
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_101p2427_bestCKA_0p4288ppt
+[25/256] -> hd_256_od_128_nl_3_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0843 $\pm$ 0.0069
+Average CCA: 86.0596 $\pm$ 0.5055
+**********************
+After aligning!!
+====================
+Average CKA: 0.5640 $\pm$ 0.0595
+Average CCA: 56.5184 $\pm$ 1.9478
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_55p6342_bestCKA_0p6079ppt
+[26/256] -> hd_256_od_128_nl_3_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0777 $\pm$ 0.0050
+Average CCA: 85.9248 $\pm$ 0.4273
+**********************
+After aligning!!
+====================
+Average CKA: 0.5659 $\pm$ 0.0480
+Average CCA: 59.6777 $\pm$ 2.7512
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_58p4126_bestCKA_0p5356ppt
+[27/256] -> hd_256_od_128_nl_3_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0812 $\pm$ 0.0053
+Average CCA: 86.1190 $\pm$ 0.3578
+**********************
+After aligning!!
+====================
+Average CKA: 0.4840 $\pm$ 0.0422
+Average CCA: 66.1526 $\pm$ 3.5159
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_68p0074_bestCKA_0p4506ppt
+[28/256] -> hd_256_od_128_nl_3_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0861 $\pm$ 0.0057
+Average CCA: 85.6858 $\pm$ 0.6799
+**********************
+After aligning!!
+====================
+Average CKA: 0.5221 $\pm$ 0.0395
+Average CCA: 64.9476 $\pm$ 3.3162
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_65p4291_bestCKA_0p5854ppt
+[29/256] -> hd_256_od_128_nl_3_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0828 $\pm$ 0.0065
+Average CCA: 86.1465 $\pm$ 0.5210
+**********************
+After aligning!!
+====================
+Average CKA: 0.5356 $\pm$ 0.0674
+Average CCA: 57.3752 $\pm$ 2.0367
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_54p9803_bestCKA_0p6311ppt
+[30/256] -> hd_256_od_128_nl_3_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0808 $\pm$ 0.0041
+Average CCA: 86.2405 $\pm$ 0.5036
+**********************
+After aligning!!
+====================
+Average CKA: 0.5650 $\pm$ 0.0355
+Average CCA: 60.6352 $\pm$ 2.0223
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_59p9075_bestCKA_0p5842ppt
+[31/256] -> hd_256_od_128_nl_3_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0839 $\pm$ 0.0080
+Average CCA: 86.0257 $\pm$ 0.4962
+**********************
+After aligning!!
+====================
+Average CKA: 0.4954 $\pm$ 0.0222
+Average CCA: 65.0855 $\pm$ 1.3331
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_66p4723_bestCKA_0p4920ppt
+[32/256] -> hd_256_od_128_nl_3_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0852 $\pm$ 0.0053
+Average CCA: 86.2130 $\pm$ 0.2597
+**********************
+After aligning!!
+====================
+Average CKA: 0.5645 $\pm$ 0.0386
+Average CCA: 62.6507 $\pm$ 2.2794
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_3_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_60p2954_bestCKA_0p6054ppt
+[33/256] -> hd_256_od_128_nl_5_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0839 $\pm$ 0.0035
+Average CCA: 85.9524 $\pm$ 0.7406
+**********************
+After aligning!!
+====================
+Average CKA: 0.4821 $\pm$ 0.0101
+Average CCA: 134.3407 $\pm$ 1.6165
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_135p1656_bestCKA_0p4691ppt
+[34/256] -> hd_256_od_128_nl_5_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0820 $\pm$ 0.0067
+Average CCA: 86.4144 $\pm$ 0.6741
+**********************
+After aligning!!
+====================
+Average CKA: 0.5196 $\pm$ 0.0377
+Average CCA: 172.4350 $\pm$ 3.6488
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_172p6974_bestCKA_0p4620ppt
+[35/256] -> hd_256_od_128_nl_5_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0871 $\pm$ 0.0064
+Average CCA: 85.7257 $\pm$ 0.7513
+**********************
+After aligning!!
+====================
+Average CKA: 0.5184 $\pm$ 0.0365
+Average CCA: 180.3480 $\pm$ 3.6595
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_183p5448_bestCKA_0p5649ppt
+[36/256] -> hd_256_od_128_nl_5_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0817 $\pm$ 0.0025
+Average CCA: 86.1642 $\pm$ 0.5362
+**********************
+After aligning!!
+====================
+Average CKA: 0.5216 $\pm$ 0.0158
+Average CCA: 179.6306 $\pm$ 5.4159
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_172p5523_bestCKA_0p5272ppt
+[37/256] -> hd_256_od_128_nl_5_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0876 $\pm$ 0.0046
+Average CCA: 86.2020 $\pm$ 0.2347
+**********************
+After aligning!!
+====================
+Average CKA: 0.5018 $\pm$ 0.0311
+Average CCA: 134.7811 $\pm$ 3.0569
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_133p9486_bestCKA_0p5467ppt
+[38/256] -> hd_256_od_128_nl_5_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0816 $\pm$ 0.0074
+Average CCA: 86.2367 $\pm$ 0.4706
+**********************
+After aligning!!
+====================
+Average CKA: 0.5019 $\pm$ 0.0386
+Average CCA: 172.2227 $\pm$ 3.3897
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_176p0835_bestCKA_0p5640ppt
+[39/256] -> hd_256_od_128_nl_5_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0831 $\pm$ 0.0030
+Average CCA: 86.4856 $\pm$ 0.3751
+**********************
+After aligning!!
+====================
+Average CKA: 0.5207 $\pm$ 0.0143
+Average CCA: 182.3511 $\pm$ 2.3239
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_181p2701_bestCKA_0p5188ppt
+[40/256] -> hd_256_od_128_nl_5_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0887 $\pm$ 0.0047
+Average CCA: 85.2561 $\pm$ 0.2250
+**********************
+After aligning!!
+====================
+Average CKA: 0.5198 $\pm$ 0.0469
+Average CCA: 179.5801 $\pm$ 1.5477
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_179p9024_bestCKA_0p4903ppt
+[41/256] -> hd_256_od_128_nl_5_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0824 $\pm$ 0.0043
+Average CCA: 86.0989 $\pm$ 0.7515
+**********************
+After aligning!!
+====================
+Average CKA: 0.4737 $\pm$ 0.0236
+Average CCA: 78.9130 $\pm$ 2.0044
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_80p5131_bestCKA_0p4702ppt
+[42/256] -> hd_256_od_128_nl_5_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0780 $\pm$ 0.0038
+Average CCA: 85.9837 $\pm$ 0.3972
+**********************
+After aligning!!
+====================
+Average CKA: 0.4915 $\pm$ 0.0263
+Average CCA: 95.3633 $\pm$ 1.8711
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_98p4223_bestCKA_0p4687ppt
+[43/256] -> hd_256_od_128_nl_5_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0876 $\pm$ 0.0044
+Average CCA: 86.0003 $\pm$ 0.4272
+**********************
+After aligning!!
+====================
+Average CKA: 0.5058 $\pm$ 0.0168
+Average CCA: 97.6347 $\pm$ 1.6106
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_95p5184_bestCKA_0p5033ppt
+[44/256] -> hd_256_od_128_nl_5_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0853 $\pm$ 0.0073
+Average CCA: 85.5817 $\pm$ 0.3382
+**********************
+After aligning!!
+====================
+Average CKA: 0.5080 $\pm$ 0.0367
+Average CCA: 97.3086 $\pm$ 2.5105
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_93p6910_bestCKA_0p5361ppt
+[45/256] -> hd_256_od_128_nl_5_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0856 $\pm$ 0.0044
+Average CCA: 86.1887 $\pm$ 0.5470
+**********************
+After aligning!!
+====================
+Average CKA: 0.4765 $\pm$ 0.0406
+Average CCA: 78.2294 $\pm$ 1.7071
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_80p0664_bestCKA_0p4300ppt
+[46/256] -> hd_256_od_128_nl_5_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0836 $\pm$ 0.0032
+Average CCA: 86.1032 $\pm$ 0.3337
+**********************
+After aligning!!
+====================
+Average CKA: 0.5083 $\pm$ 0.0245
+Average CCA: 95.0708 $\pm$ 0.6693
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_94p9021_bestCKA_0p5183ppt
+[47/256] -> hd_256_od_128_nl_5_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0798 $\pm$ 0.0011
+Average CCA: 86.1447 $\pm$ 0.1872
+**********************
+After aligning!!
+====================
+Average CKA: 0.4868 $\pm$ 0.0134
+Average CCA: 98.0307 $\pm$ 2.6365
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_95p3161_bestCKA_0p4709ppt
+[48/256] -> hd_256_od_128_nl_5_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0802 $\pm$ 0.0066
+Average CCA: 86.2034 $\pm$ 0.7231
+**********************
+After aligning!!
+====================
+Average CKA: 0.5069 $\pm$ 0.0276
+Average CCA: 99.2563 $\pm$ 0.7906
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_99p1577_bestCKA_0p5188ppt
+[49/256] -> hd_256_od_128_nl_5_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0877 $\pm$ 0.0082
+Average CCA: 85.9214 $\pm$ 0.5932
+**********************
+After aligning!!
+====================
+Average CKA: 0.4710 $\pm$ 0.0440
+Average CCA: 104.0571 $\pm$ 0.9531
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_104p4038_bestCKA_0p4490ppt
+[50/256] -> hd_256_od_128_nl_5_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0813 $\pm$ 0.0045
+Average CCA: 86.0035 $\pm$ 0.4681
+**********************
+After aligning!!
+====================
+Average CKA: 0.5286 $\pm$ 0.0200
+Average CCA: 133.5279 $\pm$ 2.5675
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_129p2499_bestCKA_0p5350ppt
+[51/256] -> hd_256_od_128_nl_5_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0818 $\pm$ 0.0039
+Average CCA: 86.2858 $\pm$ 0.2062
+**********************
+After aligning!!
+====================
+Average CKA: 0.5133 $\pm$ 0.0487
+Average CCA: 137.7374 $\pm$ 3.5691
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_133p6767_bestCKA_0p4487ppt
+[52/256] -> hd_256_od_128_nl_5_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0835 $\pm$ 0.0079
+Average CCA: 86.4296 $\pm$ 0.2543
+**********************
+After aligning!!
+====================
+Average CKA: 0.5155 $\pm$ 0.0323
+Average CCA: 140.3879 $\pm$ 2.4165
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_137p9073_bestCKA_0p5456ppt
+[53/256] -> hd_256_od_128_nl_5_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0803 $\pm$ 0.0048
+Average CCA: 86.1384 $\pm$ 0.5219
+**********************
+After aligning!!
+====================
+Average CKA: 0.4623 $\pm$ 0.0355
+Average CCA: 104.0943 $\pm$ 0.9281
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_104p3769_bestCKA_0p4480ppt
+[54/256] -> hd_256_od_128_nl_5_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0827 $\pm$ 0.0057
+Average CCA: 86.3323 $\pm$ 0.3479
+**********************
+After aligning!!
+====================
+Average CKA: 0.5248 $\pm$ 0.0250
+Average CCA: 131.8245 $\pm$ 3.3124
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_131p0092_bestCKA_0p5220ppt
+[55/256] -> hd_256_od_128_nl_5_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0846 $\pm$ 0.0061
+Average CCA: 86.0395 $\pm$ 0.2676
+**********************
+After aligning!!
+====================
+Average CKA: 0.5128 $\pm$ 0.0391
+Average CCA: 138.0254 $\pm$ 2.2403
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_135p2610_bestCKA_0p4596ppt
+[56/256] -> hd_256_od_128_nl_5_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0833 $\pm$ 0.0034
+Average CCA: 86.4314 $\pm$ 0.3521
+**********************
+After aligning!!
+====================
+Average CKA: 0.5404 $\pm$ 0.0241
+Average CCA: 136.9983 $\pm$ 3.0413
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_133p6038_bestCKA_0p5397ppt
+[57/256] -> hd_256_od_128_nl_5_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0868 $\pm$ 0.0052
+Average CCA: 85.8889 $\pm$ 0.2649
+**********************
+After aligning!!
+====================
+Average CKA: 0.4567 $\pm$ 0.0338
+Average CCA: 65.6349 $\pm$ 1.7524
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_68p0201_bestCKA_0p4241ppt
+[58/256] -> hd_256_od_128_nl_5_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0839 $\pm$ 0.0039
+Average CCA: 85.7250 $\pm$ 0.3066
+**********************
+After aligning!!
+====================
+Average CKA: 0.4593 $\pm$ 0.0417
+Average CCA: 75.8850 $\pm$ 2.5545
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_76p8208_bestCKA_0p4082ppt
+[59/256] -> hd_256_od_128_nl_5_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0797 $\pm$ 0.0047
+Average CCA: 86.0337 $\pm$ 0.6806
+**********************
+After aligning!!
+====================
+Average CKA: 0.4407 $\pm$ 0.0145
+Average CCA: 79.3580 $\pm$ 2.2811
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_83p4990_bestCKA_0p4200ppt
+[60/256] -> hd_256_od_128_nl_5_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0796 $\pm$ 0.0039
+Average CCA: 86.6027 $\pm$ 0.3692
+**********************
+After aligning!!
+====================
+Average CKA: 0.4622 $\pm$ 0.0369
+Average CCA: 79.5595 $\pm$ 2.0192
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_79p8002_bestCKA_0p4903ppt
+[61/256] -> hd_256_od_128_nl_5_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0841 $\pm$ 0.0043
+Average CCA: 85.4174 $\pm$ 0.2523
+**********************
+After aligning!!
+====================
+Average CKA: 0.4382 $\pm$ 0.0321
+Average CCA: 65.9180 $\pm$ 1.7438
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_64p9421_bestCKA_0p4091ppt
+[62/256] -> hd_256_od_128_nl_5_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0808 $\pm$ 0.0050
+Average CCA: 85.4026 $\pm$ 0.2405
+**********************
+After aligning!!
+====================
+Average CKA: 0.4627 $\pm$ 0.0131
+Average CCA: 76.5930 $\pm$ 2.1090
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_75p5406_bestCKA_0p4431ppt
+[63/256] -> hd_256_od_128_nl_5_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0857 $\pm$ 0.0066
+Average CCA: 85.6565 $\pm$ 0.6013
+**********************
+After aligning!!
+====================
+Average CKA: 0.4787 $\pm$ 0.0340
+Average CCA: 77.8246 $\pm$ 1.6143
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_78p9933_bestCKA_0p5124ppt
+[64/256] -> hd_256_od_128_nl_5_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=128, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0819 $\pm$ 0.0039
+Average CCA: 86.1422 $\pm$ 0.4714
+**********************
+After aligning!!
+====================
+Average CKA: 0.4562 $\pm$ 0.0261
+Average CCA: 76.1368 $\pm$ 1.7125
+====================
+[Models saved in] ../saved_models/hd_256_od_128_nl_5_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_76p0227_bestCKA_0p4694ppt
+[65/256] -> hd_256_od_256_nl_3_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0787 $\pm$ 0.0052
+Average CCA: 86.4291 $\pm$ 0.5761
+**********************
+After aligning!!
+====================
+Average CKA: 0.4776 $\pm$ 0.0345
+Average CCA: 269.8026 $\pm$ 3.8362
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_264p0383_bestCKA_0p4382ppt
+[66/256] -> hd_256_od_256_nl_3_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0825 $\pm$ 0.0041
+Average CCA: 86.0287 $\pm$ 0.3220
+**********************
+After aligning!!
+====================
+Average CKA: 0.5243 $\pm$ 0.0350
+Average CCA: 324.1607 $\pm$ 2.2113
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_327p0801_bestCKA_0p5106ppt
+[67/256] -> hd_256_od_256_nl_3_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0800 $\pm$ 0.0023
+Average CCA: 86.4226 $\pm$ 0.3882
+**********************
+After aligning!!
+====================
+Average CKA: 0.4746 $\pm$ 0.0231
+Average CCA: 335.7212 $\pm$ 8.3237
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_329p7891_bestCKA_0p4947ppt
+[68/256] -> hd_256_od_256_nl_3_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0868 $\pm$ 0.0057
+Average CCA: 86.4867 $\pm$ 0.5515
+**********************
+After aligning!!
+====================
+Average CKA: 0.5032 $\pm$ 0.0256
+Average CCA: 332.4226 $\pm$ 4.1174
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_333p9629_bestCKA_0p4996ppt
+[69/256] -> hd_256_od_256_nl_3_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0779 $\pm$ 0.0070
+Average CCA: 86.1956 $\pm$ 0.7670
+**********************
+After aligning!!
+====================
+Average CKA: 0.4780 $\pm$ 0.0391
+Average CCA: 274.7076 $\pm$ 1.6894
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_272p8306_bestCKA_0p5498ppt
+[70/256] -> hd_256_od_256_nl_3_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0802 $\pm$ 0.0050
+Average CCA: 86.3745 $\pm$ 0.3528
+**********************
+After aligning!!
+====================
+Average CKA: 0.4849 $\pm$ 0.0271
+Average CCA: 325.8845 $\pm$ 4.8832
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_329p0560_bestCKA_0p4627ppt
+[71/256] -> hd_256_od_256_nl_3_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0867 $\pm$ 0.0035
+Average CCA: 86.0052 $\pm$ 0.4242
+**********************
+After aligning!!
+====================
+Average CKA: 0.5133 $\pm$ 0.0274
+Average CCA: 327.6905 $\pm$ 7.2819
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_320p2109_bestCKA_0p4988ppt
+[72/256] -> hd_256_od_256_nl_3_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0809 $\pm$ 0.0064
+Average CCA: 86.0202 $\pm$ 0.3336
+**********************
+After aligning!!
+====================
+Average CKA: 0.5350 $\pm$ 0.0359
+Average CCA: 323.5936 $\pm$ 8.7255
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_320p8890_bestCKA_0p5553ppt
+[73/256] -> hd_256_od_256_nl_3_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0861 $\pm$ 0.0028
+Average CCA: 86.2316 $\pm$ 0.1867
+**********************
+After aligning!!
+====================
+Average CKA: 0.5187 $\pm$ 0.0496
+Average CCA: 187.8125 $\pm$ 4.0408
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_191p8817_bestCKA_0p5040ppt
+[74/256] -> hd_256_od_256_nl_3_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0801 $\pm$ 0.0035
+Average CCA: 86.2674 $\pm$ 0.4995
+**********************
+After aligning!!
+====================
+Average CKA: 0.5337 $\pm$ 0.0393
+Average CCA: 204.6023 $\pm$ 4.3485
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_198p1424_bestCKA_0p6088ppt
+[75/256] -> hd_256_od_256_nl_3_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0860 $\pm$ 0.0012
+Average CCA: 85.8934 $\pm$ 0.3463
+**********************
+After aligning!!
+====================
+Average CKA: 0.5074 $\pm$ 0.0264
+Average CCA: 210.6402 $\pm$ 1.9988
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_211p6378_bestCKA_0p5513ppt
+[76/256] -> hd_256_od_256_nl_3_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0839 $\pm$ 0.0081
+Average CCA: 86.5489 $\pm$ 0.4128
+**********************
+After aligning!!
+====================
+Average CKA: 0.5201 $\pm$ 0.0239
+Average CCA: 210.2607 $\pm$ 2.6567
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_212p3197_bestCKA_0p5509ppt
+[77/256] -> hd_256_od_256_nl_3_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0845 $\pm$ 0.0057
+Average CCA: 85.6766 $\pm$ 0.6118
+**********************
+After aligning!!
+====================
+Average CKA: 0.5558 $\pm$ 0.0375
+Average CCA: 185.9914 $\pm$ 4.3569
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_186p1393_bestCKA_0p5564ppt
+[78/256] -> hd_256_od_256_nl_3_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0804 $\pm$ 0.0029
+Average CCA: 86.1203 $\pm$ 0.5124
+**********************
+After aligning!!
+====================
+Average CKA: 0.4974 $\pm$ 0.0173
+Average CCA: 206.0648 $\pm$ 2.0839
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_205p4977_bestCKA_0p4778ppt
+[79/256] -> hd_256_od_256_nl_3_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0855 $\pm$ 0.0094
+Average CCA: 85.9933 $\pm$ 0.2666
+**********************
+After aligning!!
+====================
+Average CKA: 0.5219 $\pm$ 0.0199
+Average CCA: 212.1829 $\pm$ 2.5227
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_212p0725_bestCKA_0p5327ppt
+[80/256] -> hd_256_od_256_nl_3_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0907 $\pm$ 0.0047
+Average CCA: 86.0491 $\pm$ 0.8042
+**********************
+After aligning!!
+====================
+Average CKA: 0.5430 $\pm$ 0.0067
+Average CCA: 211.3650 $\pm$ 2.2196
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_213p0737_bestCKA_0p5328ppt
+[81/256] -> hd_256_od_256_nl_3_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0780 $\pm$ 0.0088
+Average CCA: 86.0604 $\pm$ 0.4355
+**********************
+After aligning!!
+====================
+Average CKA: 0.4663 $\pm$ 0.0411
+Average CCA: 230.6340 $\pm$ 1.1877
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_229p8283_bestCKA_0p4370ppt
+[82/256] -> hd_256_od_256_nl_3_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0803 $\pm$ 0.0056
+Average CCA: 85.9747 $\pm$ 0.6622
+**********************
+After aligning!!
+====================
+Average CKA: 0.5151 $\pm$ 0.0301
+Average CCA: 262.4958 $\pm$ 6.6006
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_254p4633_bestCKA_0p4664ppt
+[83/256] -> hd_256_od_256_nl_3_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0881 $\pm$ 0.0072
+Average CCA: 85.9109 $\pm$ 0.6395
+**********************
+After aligning!!
+====================
+Average CKA: 0.5461 $\pm$ 0.0830
+Average CCA: 266.1404 $\pm$ 4.6694
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_261p3653_bestCKA_0p7043ppt
+[84/256] -> hd_256_od_256_nl_3_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0910 $\pm$ 0.0046
+Average CCA: 86.0025 $\pm$ 0.6492
+**********************
+After aligning!!
+====================
+Average CKA: 0.5224 $\pm$ 0.0367
+Average CCA: 269.0370 $\pm$ 2.3851
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_264p7628_bestCKA_0p5022ppt
+[85/256] -> hd_256_od_256_nl_3_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0852 $\pm$ 0.0087
+Average CCA: 85.8063 $\pm$ 0.5487
+**********************
+After aligning!!
+====================
+Average CKA: 0.5112 $\pm$ 0.0415
+Average CCA: 226.7428 $\pm$ 2.9468
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_222p9816_bestCKA_0p5864ppt
+[86/256] -> hd_256_od_256_nl_3_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0824 $\pm$ 0.0041
+Average CCA: 86.5917 $\pm$ 0.7348
+**********************
+After aligning!!
+====================
+Average CKA: 0.5262 $\pm$ 0.0363
+Average CCA: 263.6988 $\pm$ 3.8036
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_264p1191_bestCKA_0p4847ppt
+[87/256] -> hd_256_od_256_nl_3_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0794 $\pm$ 0.0040
+Average CCA: 86.4094 $\pm$ 0.2548
+**********************
+After aligning!!
+====================
+Average CKA: 0.5081 $\pm$ 0.0313
+Average CCA: 269.8189 $\pm$ 5.0851
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_267p6044_bestCKA_0p5316ppt
+[88/256] -> hd_256_od_256_nl_3_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0865 $\pm$ 0.0053
+Average CCA: 85.8805 $\pm$ 0.4578
+**********************
+After aligning!!
+====================
+Average CKA: 0.5464 $\pm$ 0.0135
+Average CCA: 271.9179 $\pm$ 5.6678
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_277p6683_bestCKA_0p5333ppt
+[89/256] -> hd_256_od_256_nl_3_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0801 $\pm$ 0.0062
+Average CCA: 86.0989 $\pm$ 0.3258
+**********************
+After aligning!!
+====================
+Average CKA: 0.5454 $\pm$ 0.0734
+Average CCA: 162.9710 $\pm$ 4.8061
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_153p8959_bestCKA_0p6435ppt
+[90/256] -> hd_256_od_256_nl_3_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0816 $\pm$ 0.0016
+Average CCA: 85.7544 $\pm$ 0.5426
+**********************
+After aligning!!
+====================
+Average CKA: 0.5410 $\pm$ 0.0275
+Average CCA: 173.1273 $\pm$ 3.0173
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_175p1167_bestCKA_0p4971ppt
+[91/256] -> hd_256_od_256_nl_3_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0859 $\pm$ 0.0077
+Average CCA: 85.4187 $\pm$ 0.4336
+**********************
+After aligning!!
+====================
+Average CKA: 0.5526 $\pm$ 0.0470
+Average CCA: 178.6103 $\pm$ 3.9548
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_181p1283_bestCKA_0p5031ppt
+[92/256] -> hd_256_od_256_nl_3_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0843 $\pm$ 0.0041
+Average CCA: 85.8280 $\pm$ 0.1559
+**********************
+After aligning!!
+====================
+Average CKA: 0.5144 $\pm$ 0.0550
+Average CCA: 177.2600 $\pm$ 2.2612
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_176p0995_bestCKA_0p5118ppt
+[93/256] -> hd_256_od_256_nl_3_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0832 $\pm$ 0.0046
+Average CCA: 86.0069 $\pm$ 0.3174
+**********************
+After aligning!!
+====================
+Average CKA: 0.5800 $\pm$ 0.0453
+Average CCA: 162.5476 $\pm$ 1.9231
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_162p5061_bestCKA_0p6067ppt
+[94/256] -> hd_256_od_256_nl_3_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0823 $\pm$ 0.0044
+Average CCA: 86.5125 $\pm$ 0.3016
+**********************
+After aligning!!
+====================
+Average CKA: 0.5527 $\pm$ 0.0541
+Average CCA: 170.0195 $\pm$ 3.0350
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_170p9305_bestCKA_0p5237ppt
+[95/256] -> hd_256_od_256_nl_3_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0837 $\pm$ 0.0026
+Average CCA: 86.0204 $\pm$ 0.4118
+**********************
+After aligning!!
+====================
+Average CKA: 0.5544 $\pm$ 0.0385
+Average CCA: 179.1651 $\pm$ 2.5945
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_177p3369_bestCKA_0p5190ppt
+[96/256] -> hd_256_od_256_nl_3_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0865 $\pm$ 0.0058
+Average CCA: 86.3037 $\pm$ 0.4876
+**********************
+After aligning!!
+====================
+Average CKA: 0.5405 $\pm$ 0.0332
+Average CCA: 177.4682 $\pm$ 3.6680
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_3_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_172p2376_bestCKA_0p5895ppt
+[97/256] -> hd_256_od_256_nl_5_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0811 $\pm$ 0.0042
+Average CCA: 85.9999 $\pm$ 0.2825
+**********************
+After aligning!!
+====================
+Average CKA: 0.4578 $\pm$ 0.0180
+Average CCA: 313.0842 $\pm$ 8.8053
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_324p1922_bestCKA_0p4785ppt
+[98/256] -> hd_256_od_256_nl_5_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0843 $\pm$ 0.0051
+Average CCA: 86.2576 $\pm$ 0.4970
+**********************
+After aligning!!
+====================
+Average CKA: 0.5593 $\pm$ 0.0295
+Average CCA: 351.3089 $\pm$ 8.7866
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_336p3732_bestCKA_0p5320ppt
+[99/256] -> hd_256_od_256_nl_5_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0839 $\pm$ 0.0089
+Average CCA: 85.8810 $\pm$ 0.2850
+**********************
+After aligning!!
+====================
+Average CKA: 0.5472 $\pm$ 0.0228
+Average CCA: 364.3246 $\pm$ 11.1335
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_381p9260_bestCKA_0p5445ppt
+[100/256] -> hd_256_od_256_nl_5_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0809 $\pm$ 0.0040
+Average CCA: 86.0873 $\pm$ 0.4828
+**********************
+After aligning!!
+====================
+Average CKA: 0.5309 $\pm$ 0.0264
+Average CCA: 378.1298 $\pm$ 16.9434
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_395p4965_bestCKA_0p5290ppt
+[101/256] -> hd_256_od_256_nl_5_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0830 $\pm$ 0.0050
+Average CCA: 86.2157 $\pm$ 0.2079
+**********************
+After aligning!!
+====================
+Average CKA: 0.5160 $\pm$ 0.0342
+Average CCA: 299.4326 $\pm$ 12.3994
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_297p7960_bestCKA_0p5576ppt
+[102/256] -> hd_256_od_256_nl_5_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0850 $\pm$ 0.0047
+Average CCA: 86.2671 $\pm$ 0.3780
+**********************
+After aligning!!
+====================
+Average CKA: 0.5249 $\pm$ 0.0090
+Average CCA: 359.5487 $\pm$ 12.9254
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_363p5175_bestCKA_0p5304ppt
+[103/256] -> hd_256_od_256_nl_5_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0835 $\pm$ 0.0074
+Average CCA: 86.2923 $\pm$ 0.4888
+**********************
+After aligning!!
+====================
+Average CKA: 0.5272 $\pm$ 0.0308
+Average CCA: 348.9845 $\pm$ 15.6721
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_331p5585_bestCKA_0p4931ppt
+[104/256] -> hd_256_od_256_nl_5_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0904 $\pm$ 0.0047
+Average CCA: 85.9214 $\pm$ 0.2860
+**********************
+After aligning!!
+====================
+Average CKA: 0.5201 $\pm$ 0.0138
+Average CCA: 377.4072 $\pm$ 5.6997
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_380p3131_bestCKA_0p5173ppt
+[105/256] -> hd_256_od_256_nl_5_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0802 $\pm$ 0.0076
+Average CCA: 86.0217 $\pm$ 0.4384
+**********************
+After aligning!!
+====================
+Average CKA: 0.4825 $\pm$ 0.0380
+Average CCA: 205.6217 $\pm$ 4.0374
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_199p1511_bestCKA_0p5130ppt
+[106/256] -> hd_256_od_256_nl_5_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0864 $\pm$ 0.0023
+Average CCA: 86.2261 $\pm$ 0.2767
+**********************
+After aligning!!
+====================
+Average CKA: 0.5226 $\pm$ 0.0329
+Average CCA: 228.0119 $\pm$ 1.5095
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_229p2890_bestCKA_0p4756ppt
+[107/256] -> hd_256_od_256_nl_5_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0845 $\pm$ 0.0045
+Average CCA: 86.2431 $\pm$ 0.7360
+**********************
+After aligning!!
+====================
+Average CKA: 0.5097 $\pm$ 0.0248
+Average CCA: 235.5661 $\pm$ 6.0907
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_238p4824_bestCKA_0p5062ppt
+[108/256] -> hd_256_od_256_nl_5_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0881 $\pm$ 0.0033
+Average CCA: 86.0398 $\pm$ 0.5581
+**********************
+After aligning!!
+====================
+Average CKA: 0.5254 $\pm$ 0.0268
+Average CCA: 230.1511 $\pm$ 9.5946
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_228p9271_bestCKA_0p5683ppt
+[109/256] -> hd_256_od_256_nl_5_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0815 $\pm$ 0.0067
+Average CCA: 86.0713 $\pm$ 0.5582
+**********************
+After aligning!!
+====================
+Average CKA: 0.5019 $\pm$ 0.0428
+Average CCA: 204.4921 $\pm$ 6.1340
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_193p7204_bestCKA_0p5516ppt
+[110/256] -> hd_256_od_256_nl_5_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0851 $\pm$ 0.0045
+Average CCA: 86.1643 $\pm$ 0.3886
+**********************
+After aligning!!
+====================
+Average CKA: 0.5096 $\pm$ 0.0184
+Average CCA: 228.7237 $\pm$ 4.5166
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_220p4077_bestCKA_0p4959ppt
+[111/256] -> hd_256_od_256_nl_5_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0812 $\pm$ 0.0042
+Average CCA: 86.6809 $\pm$ 0.2567
+**********************
+After aligning!!
+====================
+Average CKA: 0.5109 $\pm$ 0.0250
+Average CCA: 231.6963 $\pm$ 6.5947
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_230p3057_bestCKA_0p4834ppt
+[112/256] -> hd_256_od_256_nl_5_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0818 $\pm$ 0.0048
+Average CCA: 86.3628 $\pm$ 0.6931
+**********************
+After aligning!!
+====================
+Average CKA: 0.5176 $\pm$ 0.0231
+Average CCA: 234.0901 $\pm$ 4.7652
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_224p6763_bestCKA_0p5202ppt
+[113/256] -> hd_256_od_256_nl_5_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0831 $\pm$ 0.0054
+Average CCA: 86.4899 $\pm$ 0.4429
+**********************
+After aligning!!
+====================
+Average CKA: 0.4797 $\pm$ 0.0177
+Average CCA: 258.9287 $\pm$ 3.9239
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_259p0466_bestCKA_0p4689ppt
+[114/256] -> hd_256_od_256_nl_5_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0813 $\pm$ 0.0065
+Average CCA: 86.1246 $\pm$ 0.1634
+**********************
+After aligning!!
+====================
+Average CKA: 0.5022 $\pm$ 0.0441
+Average CCA: 287.7009 $\pm$ 3.4279
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_285p5600_bestCKA_0p4209ppt
+[115/256] -> hd_256_od_256_nl_5_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0831 $\pm$ 0.0043
+Average CCA: 86.0555 $\pm$ 0.5086
+**********************
+After aligning!!
+====================
+Average CKA: 0.5295 $\pm$ 0.0194
+Average CCA: 293.1378 $\pm$ 14.4442
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_299p0778_bestCKA_0p5438ppt
+[116/256] -> hd_256_od_256_nl_5_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0813 $\pm$ 0.0059
+Average CCA: 85.9578 $\pm$ 0.5169
+**********************
+After aligning!!
+====================
+Average CKA: 0.5037 $\pm$ 0.0285
+Average CCA: 307.1637 $\pm$ 12.6202
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_317p6979_bestCKA_0p4592ppt
+[117/256] -> hd_256_od_256_nl_5_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0801 $\pm$ 0.0060
+Average CCA: 86.5334 $\pm$ 0.7177
+**********************
+After aligning!!
+====================
+Average CKA: 0.4562 $\pm$ 0.0456
+Average CCA: 256.3427 $\pm$ 6.4023
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_259p0536_bestCKA_0p3934ppt
+[118/256] -> hd_256_od_256_nl_5_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0800 $\pm$ 0.0071
+Average CCA: 86.4591 $\pm$ 0.7364
+**********************
+After aligning!!
+====================
+Average CKA: 0.5228 $\pm$ 0.0243
+Average CCA: 285.0720 $\pm$ 9.4722
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_269p9465_bestCKA_0p5603ppt
+[119/256] -> hd_256_od_256_nl_5_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0851 $\pm$ 0.0034
+Average CCA: 86.0767 $\pm$ 0.3988
+**********************
+After aligning!!
+====================
+Average CKA: 0.5072 $\pm$ 0.0172
+Average CCA: 301.3105 $\pm$ 8.2623
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_297p9313_bestCKA_0p5141ppt
+[120/256] -> hd_256_od_256_nl_5_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0815 $\pm$ 0.0056
+Average CCA: 85.7612 $\pm$ 0.4153
+**********************
+After aligning!!
+====================
+Average CKA: 0.5206 $\pm$ 0.0342
+Average CCA: 294.0301 $\pm$ 11.3890
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_313p4005_bestCKA_0p4538ppt
+[121/256] -> hd_256_od_256_nl_5_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0836 $\pm$ 0.0077
+Average CCA: 85.4828 $\pm$ 0.5625
+**********************
+After aligning!!
+====================
+Average CKA: 0.4502 $\pm$ 0.0278
+Average CCA: 178.4962 $\pm$ 0.5345
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_177p7570_bestCKA_0p5051ppt
+[122/256] -> hd_256_od_256_nl_5_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0804 $\pm$ 0.0045
+Average CCA: 86.0869 $\pm$ 0.5006
+**********************
+After aligning!!
+====================
+Average CKA: 0.4834 $\pm$ 0.0515
+Average CCA: 194.8099 $\pm$ 2.8565
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_198p1333_bestCKA_0p4501ppt
+[123/256] -> hd_256_od_256_nl_5_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0874 $\pm$ 0.0089
+Average CCA: 86.1600 $\pm$ 0.4379
+**********************
+After aligning!!
+====================
+Average CKA: 0.4837 $\pm$ 0.0418
+Average CCA: 198.3295 $\pm$ 3.1336
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_201p7131_bestCKA_0p5593ppt
+[124/256] -> hd_256_od_256_nl_5_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0840 $\pm$ 0.0050
+Average CCA: 85.9007 $\pm$ 1.0134
+**********************
+After aligning!!
+====================
+Average CKA: 0.4622 $\pm$ 0.0174
+Average CCA: 199.9296 $\pm$ 4.1938
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_204p4491_bestCKA_0p4402ppt
+[125/256] -> hd_256_od_256_nl_5_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0791 $\pm$ 0.0044
+Average CCA: 86.1314 $\pm$ 0.5154
+**********************
+After aligning!!
+====================
+Average CKA: 0.4658 $\pm$ 0.0198
+Average CCA: 180.0209 $\pm$ 1.7439
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_181p3267_bestCKA_0p4670ppt
+[126/256] -> hd_256_od_256_nl_5_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0856 $\pm$ 0.0043
+Average CCA: 85.7189 $\pm$ 0.4031
+**********************
+After aligning!!
+====================
+Average CKA: 0.4652 $\pm$ 0.0350
+Average CCA: 195.7365 $\pm$ 2.8172
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_198p3761_bestCKA_0p4812ppt
+[127/256] -> hd_256_od_256_nl_5_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0821 $\pm$ 0.0044
+Average CCA: 86.3561 $\pm$ 0.4329
+**********************
+After aligning!!
+====================
+Average CKA: 0.4807 $\pm$ 0.0333
+Average CCA: 199.0103 $\pm$ 3.9559
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_194p6763_bestCKA_0p4548ppt
+[128/256] -> hd_256_od_256_nl_5_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=256, output_dim=256, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0823 $\pm$ 0.0065
+Average CCA: 86.3927 $\pm$ 0.3814
+**********************
+After aligning!!
+====================
+Average CKA: 0.4849 $\pm$ 0.0436
+Average CCA: 200.1002 $\pm$ 2.1638
+====================
+[Models saved in] ../saved_models/hd_256_od_256_nl_5_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_200p7726_bestCKA_0p4572ppt
+[129/256] -> hd_512_od_128_nl_3_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0772 $\pm$ 0.0063
+Average CCA: 86.0928 $\pm$ 0.5743
+**********************
+After aligning!!
+====================
+Average CKA: 0.4487 $\pm$ 0.0369
+Average CCA: 122.9900 $\pm$ 3.7256
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_125p2275_bestCKA_0p4592ppt
+[130/256] -> hd_512_od_128_nl_3_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0858 $\pm$ 0.0029
+Average CCA: 86.0305 $\pm$ 0.4920
+**********************
+After aligning!!
+====================
+Average CKA: 0.5058 $\pm$ 0.0240
+Average CCA: 156.2229 $\pm$ 7.2759
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_148p2822_bestCKA_0p4691ppt
+[131/256] -> hd_512_od_128_nl_3_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0859 $\pm$ 0.0048
+Average CCA: 86.2039 $\pm$ 0.4805
+**********************
+After aligning!!
+====================
+Average CKA: 0.5255 $\pm$ 0.0576
+Average CCA: 163.1545 $\pm$ 5.4967
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_153p3331_bestCKA_0p5054ppt
+[132/256] -> hd_512_od_128_nl_3_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0777 $\pm$ 0.0065
+Average CCA: 85.9918 $\pm$ 0.2574
+**********************
+After aligning!!
+====================
+Average CKA: 0.5013 $\pm$ 0.0228
+Average CCA: 160.1604 $\pm$ 3.4798
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_163p8782_bestCKA_0p4864ppt
+[133/256] -> hd_512_od_128_nl_3_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0804 $\pm$ 0.0038
+Average CCA: 85.9686 $\pm$ 0.5958
+**********************
+After aligning!!
+====================
+Average CKA: 0.4533 $\pm$ 0.0234
+Average CCA: 118.9789 $\pm$ 3.9497
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_124p3924_bestCKA_0p4538ppt
+[134/256] -> hd_512_od_128_nl_3_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0788 $\pm$ 0.0035
+Average CCA: 86.4588 $\pm$ 0.2558
+**********************
+After aligning!!
+====================
+Average CKA: 0.5091 $\pm$ 0.0520
+Average CCA: 156.0255 $\pm$ 2.0518
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_156p0003_bestCKA_0p5014ppt
+[135/256] -> hd_512_od_128_nl_3_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0860 $\pm$ 0.0114
+Average CCA: 86.1563 $\pm$ 0.4331
+**********************
+After aligning!!
+====================
+Average CKA: 0.5116 $\pm$ 0.0373
+Average CCA: 164.6622 $\pm$ 2.8423
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_164p3096_bestCKA_0p5463ppt
+[136/256] -> hd_512_od_128_nl_3_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0812 $\pm$ 0.0080
+Average CCA: 85.9615 $\pm$ 0.1219
+**********************
+After aligning!!
+====================
+Average CKA: 0.4976 $\pm$ 0.0110
+Average CCA: 162.2213 $\pm$ 5.8413
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_152p1100_bestCKA_0p4994ppt
+[137/256] -> hd_512_od_128_nl_3_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0837 $\pm$ 0.0056
+Average CCA: 85.6399 $\pm$ 0.4618
+**********************
+After aligning!!
+====================
+Average CKA: 0.4995 $\pm$ 0.0521
+Average CCA: 74.4299 $\pm$ 2.4885
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_77p3120_bestCKA_0p4850ppt
+[138/256] -> hd_512_od_128_nl_3_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0849 $\pm$ 0.0051
+Average CCA: 86.0617 $\pm$ 0.1982
+**********************
+After aligning!!
+====================
+Average CKA: 0.4893 $\pm$ 0.0219
+Average CCA: 95.0816 $\pm$ 5.6648
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_89p2880_bestCKA_0p4869ppt
+[139/256] -> hd_512_od_128_nl_3_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0835 $\pm$ 0.0065
+Average CCA: 85.9744 $\pm$ 0.3317
+**********************
+After aligning!!
+====================
+Average CKA: 0.5207 $\pm$ 0.0317
+Average CCA: 98.5602 $\pm$ 2.5271
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_96p9550_bestCKA_0p5641ppt
+[140/256] -> hd_512_od_128_nl_3_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0850 $\pm$ 0.0073
+Average CCA: 85.4231 $\pm$ 0.4939
+**********************
+After aligning!!
+====================
+Average CKA: 0.5201 $\pm$ 0.0252
+Average CCA: 93.1054 $\pm$ 3.6081
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_87p0633_bestCKA_0p5643ppt
+[141/256] -> hd_512_od_128_nl_3_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0885 $\pm$ 0.0039
+Average CCA: 85.6769 $\pm$ 0.5757
+**********************
+After aligning!!
+====================
+Average CKA: 0.5307 $\pm$ 0.0472
+Average CCA: 72.9192 $\pm$ 3.2133
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_68p3569_bestCKA_0p5795ppt
+[142/256] -> hd_512_od_128_nl_3_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0824 $\pm$ 0.0062
+Average CCA: 85.9113 $\pm$ 0.3462
+**********************
+After aligning!!
+====================
+Average CKA: 0.4931 $\pm$ 0.0183
+Average CCA: 97.4226 $\pm$ 1.7332
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_100p4219_bestCKA_0p4837ppt
+[143/256] -> hd_512_od_128_nl_3_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0836 $\pm$ 0.0030
+Average CCA: 86.1659 $\pm$ 0.4330
+**********************
+After aligning!!
+====================
+Average CKA: 0.4924 $\pm$ 0.0500
+Average CCA: 98.2970 $\pm$ 3.6684
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_97p0988_bestCKA_0p4694ppt
+[144/256] -> hd_512_od_128_nl_3_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0809 $\pm$ 0.0048
+Average CCA: 86.4668 $\pm$ 0.3907
+**********************
+After aligning!!
+====================
+Average CKA: 0.5114 $\pm$ 0.0271
+Average CCA: 97.3758 $\pm$ 1.6837
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_97p7345_bestCKA_0p5424ppt
+[145/256] -> hd_512_od_128_nl_3_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0835 $\pm$ 0.0031
+Average CCA: 86.1644 $\pm$ 0.6698
+**********************
+After aligning!!
+====================
+Average CKA: 0.4812 $\pm$ 0.0627
+Average CCA: 96.2433 $\pm$ 4.1996
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_102p9928_bestCKA_0p4512ppt
+[146/256] -> hd_512_od_128_nl_3_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0818 $\pm$ 0.0049
+Average CCA: 85.7840 $\pm$ 0.6180
+**********************
+After aligning!!
+====================
+Average CKA: 0.5252 $\pm$ 0.0211
+Average CCA: 126.0436 $\pm$ 1.7188
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_125p8471_bestCKA_0p5024ppt
+[147/256] -> hd_512_od_128_nl_3_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0805 $\pm$ 0.0061
+Average CCA: 86.5090 $\pm$ 0.4130
+**********************
+After aligning!!
+====================
+Average CKA: 0.4882 $\pm$ 0.0106
+Average CCA: 129.6198 $\pm$ 3.5651
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_125p2833_bestCKA_0p4960ppt
+[148/256] -> hd_512_od_128_nl_3_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0793 $\pm$ 0.0036
+Average CCA: 86.2733 $\pm$ 0.3173
+**********************
+After aligning!!
+====================
+Average CKA: 0.5054 $\pm$ 0.0195
+Average CCA: 126.3299 $\pm$ 3.2203
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_125p3547_bestCKA_0p5273ppt
+[149/256] -> hd_512_od_128_nl_3_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0827 $\pm$ 0.0050
+Average CCA: 85.8802 $\pm$ 0.5137
+**********************
+After aligning!!
+====================
+Average CKA: 0.4796 $\pm$ 0.0441
+Average CCA: 96.6784 $\pm$ 1.8640
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_96p6490_bestCKA_0p4182ppt
+[150/256] -> hd_512_od_128_nl_3_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0771 $\pm$ 0.0031
+Average CCA: 86.2787 $\pm$ 0.6872
+**********************
+After aligning!!
+====================
+Average CKA: 0.5060 $\pm$ 0.0227
+Average CCA: 122.4938 $\pm$ 6.4887
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_126p5058_bestCKA_0p5400ppt
+[151/256] -> hd_512_od_128_nl_3_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0805 $\pm$ 0.0034
+Average CCA: 86.3134 $\pm$ 0.5126
+**********************
+After aligning!!
+====================
+Average CKA: 0.4843 $\pm$ 0.0220
+Average CCA: 123.5127 $\pm$ 6.1009
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_121p0646_bestCKA_0p5083ppt
+[152/256] -> hd_512_od_128_nl_3_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0814 $\pm$ 0.0070
+Average CCA: 86.1157 $\pm$ 0.4211
+**********************
+After aligning!!
+====================
+Average CKA: 0.4952 $\pm$ 0.0739
+Average CCA: 127.8877 $\pm$ 3.9389
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_126p5901_bestCKA_0p4097ppt
+[153/256] -> hd_512_od_128_nl_3_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0832 $\pm$ 0.0043
+Average CCA: 85.9513 $\pm$ 0.2818
+**********************
+After aligning!!
+====================
+Average CKA: 0.5479 $\pm$ 0.0654
+Average CCA: 60.7482 $\pm$ 3.4742
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_64p1476_bestCKA_0p4954ppt
+[154/256] -> hd_512_od_128_nl_3_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0826 $\pm$ 0.0070
+Average CCA: 86.6104 $\pm$ 0.2467
+**********************
+After aligning!!
+====================
+Average CKA: 0.5435 $\pm$ 0.0921
+Average CCA: 69.8988 $\pm$ 5.3752
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_73p6640_bestCKA_0p4716ppt
+[155/256] -> hd_512_od_128_nl_3_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0822 $\pm$ 0.0052
+Average CCA: 85.8778 $\pm$ 0.5790
+**********************
+After aligning!!
+====================
+Average CKA: 0.5305 $\pm$ 0.0572
+Average CCA: 74.0671 $\pm$ 3.4213
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_79p0181_bestCKA_0p4547ppt
+[156/256] -> hd_512_od_128_nl_3_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0799 $\pm$ 0.0053
+Average CCA: 86.5286 $\pm$ 0.5084
+**********************
+After aligning!!
+====================
+Average CKA: 0.5106 $\pm$ 0.0678
+Average CCA: 75.1841 $\pm$ 3.9819
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_72p5501_bestCKA_0p5541ppt
+[157/256] -> hd_512_od_128_nl_3_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0835 $\pm$ 0.0058
+Average CCA: 86.2638 $\pm$ 0.6585
+**********************
+After aligning!!
+====================
+Average CKA: 0.5823 $\pm$ 0.0916
+Average CCA: 59.3126 $\pm$ 3.0603
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_55p9827_bestCKA_0p6714ppt
+[158/256] -> hd_512_od_128_nl_3_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0842 $\pm$ 0.0043
+Average CCA: 85.9538 $\pm$ 0.2940
+**********************
+After aligning!!
+====================
+Average CKA: 0.5083 $\pm$ 0.0345
+Average CCA: 74.4457 $\pm$ 2.1653
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_71p9588_bestCKA_0p5476ppt
+[159/256] -> hd_512_od_128_nl_3_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0888 $\pm$ 0.0081
+Average CCA: 85.7581 $\pm$ 0.3181
+**********************
+After aligning!!
+====================
+Average CKA: 0.5049 $\pm$ 0.0353
+Average CCA: 75.5971 $\pm$ 3.0287
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_77p8319_bestCKA_0p4637ppt
+[160/256] -> hd_512_od_128_nl_3_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0802 $\pm$ 0.0065
+Average CCA: 86.0034 $\pm$ 0.3422
+**********************
+After aligning!!
+====================
+Average CKA: 0.4889 $\pm$ 0.0211
+Average CCA: 76.9879 $\pm$ 2.5730
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_3_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_72p1201_bestCKA_0p5039ppt
+[161/256] -> hd_512_od_128_nl_5_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0834 $\pm$ 0.0057
+Average CCA: 85.9446 $\pm$ 0.5551
+**********************
+After aligning!!
+====================
+Average CKA: 0.4878 $\pm$ 0.0238
+Average CCA: 165.0807 $\pm$ 4.2130
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_167p5756_bestCKA_0p4746ppt
+[162/256] -> hd_512_od_128_nl_5_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0867 $\pm$ 0.0067
+Average CCA: 85.5978 $\pm$ 0.4993
+**********************
+After aligning!!
+====================
+Average CKA: 0.5350 $\pm$ 0.0283
+Average CCA: 220.1619 $\pm$ 3.3697
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_218p1737_bestCKA_0p5834ppt
+[163/256] -> hd_512_od_128_nl_5_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0857 $\pm$ 0.0037
+Average CCA: 85.9388 $\pm$ 0.9275
+**********************
+After aligning!!
+====================
+Average CKA: 0.5579 $\pm$ 0.0264
+Average CCA: 233.0086 $\pm$ 7.3716
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_235p5071_bestCKA_0p5584ppt
+[164/256] -> hd_512_od_128_nl_5_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0825 $\pm$ 0.0076
+Average CCA: 86.0625 $\pm$ 0.8658
+**********************
+After aligning!!
+====================
+Average CKA: 0.5389 $\pm$ 0.0089
+Average CCA: 232.5042 $\pm$ 7.8720
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_247p1158_bestCKA_0p5252ppt
+[165/256] -> hd_512_od_128_nl_5_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0789 $\pm$ 0.0043
+Average CCA: 86.0738 $\pm$ 0.3074
+**********************
+After aligning!!
+====================
+Average CKA: 0.4831 $\pm$ 0.0450
+Average CCA: 166.0048 $\pm$ 6.1516
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_174p3495_bestCKA_0p4015ppt
+[166/256] -> hd_512_od_128_nl_5_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0826 $\pm$ 0.0046
+Average CCA: 86.1623 $\pm$ 0.4345
+**********************
+After aligning!!
+====================
+Average CKA: 0.5103 $\pm$ 0.0170
+Average CCA: 220.0203 $\pm$ 5.2068
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_218p8960_bestCKA_0p5006ppt
+[167/256] -> hd_512_od_128_nl_5_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0783 $\pm$ 0.0071
+Average CCA: 86.0264 $\pm$ 0.3518
+**********************
+After aligning!!
+====================
+Average CKA: 0.5379 $\pm$ 0.0304
+Average CCA: 237.3943 $\pm$ 7.4803
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_236p2017_bestCKA_0p5570ppt
+[168/256] -> hd_512_od_128_nl_5_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0782 $\pm$ 0.0059
+Average CCA: 86.3245 $\pm$ 0.6328
+**********************
+After aligning!!
+====================
+Average CKA: 0.5204 $\pm$ 0.0263
+Average CCA: 231.5849 $\pm$ 3.0711
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_230p1839_bestCKA_0p5580ppt
+[169/256] -> hd_512_od_128_nl_5_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0836 $\pm$ 0.0044
+Average CCA: 85.8778 $\pm$ 0.4876
+**********************
+After aligning!!
+====================
+Average CKA: 0.4374 $\pm$ 0.0342
+Average CCA: 92.5684 $\pm$ 1.2018
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_92p6394_bestCKA_0p4284ppt
+[170/256] -> hd_512_od_128_nl_5_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0819 $\pm$ 0.0061
+Average CCA: 86.6800 $\pm$ 0.2054
+**********************
+After aligning!!
+====================
+Average CKA: 0.5285 $\pm$ 0.0249
+Average CCA: 130.1503 $\pm$ 1.6616
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_131p0635_bestCKA_0p5758ppt
+[171/256] -> hd_512_od_128_nl_5_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0863 $\pm$ 0.0093
+Average CCA: 85.6413 $\pm$ 0.2764
+**********************
+After aligning!!
+====================
+Average CKA: 0.5106 $\pm$ 0.0182
+Average CCA: 131.4420 $\pm$ 2.2294
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_132p9103_bestCKA_0p5278ppt
+[172/256] -> hd_512_od_128_nl_5_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0811 $\pm$ 0.0047
+Average CCA: 85.8892 $\pm$ 0.8237
+**********************
+After aligning!!
+====================
+Average CKA: 0.5090 $\pm$ 0.0241
+Average CCA: 133.9967 $\pm$ 3.5535
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_131p0814_bestCKA_0p5211ppt
+[173/256] -> hd_512_od_128_nl_5_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0852 $\pm$ 0.0029
+Average CCA: 86.1427 $\pm$ 0.3459
+**********************
+After aligning!!
+====================
+Average CKA: 0.4618 $\pm$ 0.0150
+Average CCA: 91.7103 $\pm$ 0.7872
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_92p7033_bestCKA_0p4489ppt
+[174/256] -> hd_512_od_128_nl_5_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0808 $\pm$ 0.0047
+Average CCA: 86.7576 $\pm$ 0.6027
+**********************
+After aligning!!
+====================
+Average CKA: 0.5065 $\pm$ 0.0363
+Average CCA: 126.8919 $\pm$ 3.6485
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_129p6048_bestCKA_0p5752ppt
+[175/256] -> hd_512_od_128_nl_5_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0744 $\pm$ 0.0056
+Average CCA: 86.4949 $\pm$ 0.2139
+**********************
+After aligning!!
+====================
+Average CKA: 0.4865 $\pm$ 0.0283
+Average CCA: 132.7558 $\pm$ 2.5076
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_135p9830_bestCKA_0p4701ppt
+[176/256] -> hd_512_od_128_nl_5_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0828 $\pm$ 0.0069
+Average CCA: 86.2957 $\pm$ 0.2952
+**********************
+After aligning!!
+====================
+Average CKA: 0.5002 $\pm$ 0.0493
+Average CCA: 130.5191 $\pm$ 2.3190
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_132p1715_bestCKA_0p5337ppt
+[177/256] -> hd_512_od_128_nl_5_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0804 $\pm$ 0.0073
+Average CCA: 85.9283 $\pm$ 0.7793
+**********************
+After aligning!!
+====================
+Average CKA: 0.4293 $\pm$ 0.0420
+Average CCA: 127.4493 $\pm$ 1.6472
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_127p9631_bestCKA_0p4599ppt
+[178/256] -> hd_512_od_128_nl_5_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0870 $\pm$ 0.0084
+Average CCA: 86.0617 $\pm$ 0.7423
+**********************
+After aligning!!
+====================
+Average CKA: 0.5566 $\pm$ 0.0435
+Average CCA: 168.6542 $\pm$ 1.8028
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_170p7213_bestCKA_0p5603ppt
+[179/256] -> hd_512_od_128_nl_5_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0834 $\pm$ 0.0063
+Average CCA: 86.2439 $\pm$ 0.4767
+**********************
+After aligning!!
+====================
+Average CKA: 0.5176 $\pm$ 0.0230
+Average CCA: 176.9944 $\pm$ 4.3163
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_175p1723_bestCKA_0p5089ppt
+[180/256] -> hd_512_od_128_nl_5_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0859 $\pm$ 0.0060
+Average CCA: 86.0878 $\pm$ 0.3240
+**********************
+After aligning!!
+====================
+Average CKA: 0.5260 $\pm$ 0.0404
+Average CCA: 174.9529 $\pm$ 5.4455
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_175p6001_bestCKA_0p4795ppt
+[181/256] -> hd_512_od_128_nl_5_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0839 $\pm$ 0.0064
+Average CCA: 86.0678 $\pm$ 0.6085
+**********************
+After aligning!!
+====================
+Average CKA: 0.4636 $\pm$ 0.0348
+Average CCA: 123.7360 $\pm$ 2.3973
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_126p4985_bestCKA_0p5218ppt
+[182/256] -> hd_512_od_128_nl_5_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0741 $\pm$ 0.0045
+Average CCA: 86.4183 $\pm$ 0.3844
+**********************
+After aligning!!
+====================
+Average CKA: 0.5039 $\pm$ 0.0399
+Average CCA: 172.0603 $\pm$ 4.2957
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_165p0298_bestCKA_0p4524ppt
+[183/256] -> hd_512_od_128_nl_5_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0786 $\pm$ 0.0040
+Average CCA: 86.4219 $\pm$ 0.2933
+**********************
+After aligning!!
+====================
+Average CKA: 0.5052 $\pm$ 0.0352
+Average CCA: 178.1904 $\pm$ 3.2724
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_177p3002_bestCKA_0p5570ppt
+[184/256] -> hd_512_od_128_nl_5_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0815 $\pm$ 0.0027
+Average CCA: 86.1812 $\pm$ 0.3574
+**********************
+After aligning!!
+====================
+Average CKA: 0.5234 $\pm$ 0.0109
+Average CCA: 177.8771 $\pm$ 4.6195
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_180p1197_bestCKA_0p5294ppt
+[185/256] -> hd_512_od_128_nl_5_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0840 $\pm$ 0.0067
+Average CCA: 86.1874 $\pm$ 0.2310
+**********************
+After aligning!!
+====================
+Average CKA: 0.4400 $\pm$ 0.0283
+Average CCA: 73.5592 $\pm$ 2.7929
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_76p4330_bestCKA_0p4825ppt
+[186/256] -> hd_512_od_128_nl_5_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0790 $\pm$ 0.0058
+Average CCA: 86.0057 $\pm$ 0.4779
+**********************
+After aligning!!
+====================
+Average CKA: 0.4649 $\pm$ 0.0175
+Average CCA: 97.7883 $\pm$ 2.3646
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_96p5678_bestCKA_0p4809ppt
+[187/256] -> hd_512_od_128_nl_5_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0797 $\pm$ 0.0040
+Average CCA: 86.0614 $\pm$ 0.4981
+**********************
+After aligning!!
+====================
+Average CKA: 0.4902 $\pm$ 0.0534
+Average CCA: 100.2528 $\pm$ 1.6678
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_99p4367_bestCKA_0p5223ppt
+[188/256] -> hd_512_od_128_nl_5_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0835 $\pm$ 0.0051
+Average CCA: 86.4036 $\pm$ 0.6090
+**********************
+After aligning!!
+====================
+Average CKA: 0.4752 $\pm$ 0.0293
+Average CCA: 100.2494 $\pm$ 3.0933
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_105p2579_bestCKA_0p5204ppt
+[189/256] -> hd_512_od_128_nl_5_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0830 $\pm$ 0.0055
+Average CCA: 86.2760 $\pm$ 0.2398
+**********************
+After aligning!!
+====================
+Average CKA: 0.4551 $\pm$ 0.0235
+Average CCA: 71.7127 $\pm$ 1.8285
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_71p5328_bestCKA_0p4197ppt
+[190/256] -> hd_512_od_128_nl_5_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0823 $\pm$ 0.0047
+Average CCA: 86.1378 $\pm$ 0.4658
+**********************
+After aligning!!
+====================
+Average CKA: 0.4556 $\pm$ 0.0232
+Average CCA: 97.4107 $\pm$ 3.2908
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_102p9691_bestCKA_0p4868ppt
+[191/256] -> hd_512_od_128_nl_5_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0851 $\pm$ 0.0054
+Average CCA: 85.6778 $\pm$ 0.2874
+**********************
+After aligning!!
+====================
+Average CKA: 0.5094 $\pm$ 0.0484
+Average CCA: 101.0893 $\pm$ 1.4730
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_98p1881_bestCKA_0p4530ppt
+[192/256] -> hd_512_od_128_nl_5_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=128, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0856 $\pm$ 0.0055
+Average CCA: 86.3356 $\pm$ 0.5559
+**********************
+After aligning!!
+====================
+Average CKA: 0.5122 $\pm$ 0.0187
+Average CCA: 102.0834 $\pm$ 1.9776
+====================
+[Models saved in] ../saved_models/hd_512_od_128_nl_5_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_105p3388_bestCKA_0p5312ppt
+[193/256] -> hd_512_od_256_nl_3_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0830 $\pm$ 0.0056
+Average CCA: 85.9293 $\pm$ 0.3838
+**********************
+After aligning!!
+====================
+Average CKA: 0.4978 $\pm$ 0.0256
+Average CCA: 340.7996 $\pm$ 2.6689
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_340p9013_bestCKA_0p5242ppt
+[194/256] -> hd_512_od_256_nl_3_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0856 $\pm$ 0.0027
+Average CCA: 86.3703 $\pm$ 0.7531
+**********************
+After aligning!!
+====================
+Average CKA: 0.5087 $\pm$ 0.0362
+Average CCA: 421.6811 $\pm$ 2.5953
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_424p1937_bestCKA_0p5568ppt
+[195/256] -> hd_512_od_256_nl_3_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0804 $\pm$ 0.0057
+Average CCA: 86.2412 $\pm$ 0.3717
+**********************
+After aligning!!
+====================
+Average CKA: 0.4955 $\pm$ 0.0128
+Average CCA: 436.3410 $\pm$ 6.2869
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_434p1317_bestCKA_0p5090ppt
+[196/256] -> hd_512_od_256_nl_3_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0841 $\pm$ 0.0038
+Average CCA: 85.9150 $\pm$ 0.3145
+**********************
+After aligning!!
+====================
+Average CKA: 0.5078 $\pm$ 0.0161
+Average CCA: 433.2311 $\pm$ 4.2993
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_431p0324_bestCKA_0p5128ppt
+[197/256] -> hd_512_od_256_nl_3_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0786 $\pm$ 0.0051
+Average CCA: 86.3757 $\pm$ 0.3762
+**********************
+After aligning!!
+====================
+Average CKA: 0.4958 $\pm$ 0.0426
+Average CCA: 336.5888 $\pm$ 3.9979
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_338p8096_bestCKA_0p4929ppt
+[198/256] -> hd_512_od_256_nl_3_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0824 $\pm$ 0.0044
+Average CCA: 85.8013 $\pm$ 0.6107
+**********************
+After aligning!!
+====================
+Average CKA: 0.4770 $\pm$ 0.0471
+Average CCA: 421.5092 $\pm$ 6.2109
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_429p1554_bestCKA_0p4212ppt
+[199/256] -> hd_512_od_256_nl_3_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0864 $\pm$ 0.0076
+Average CCA: 86.6926 $\pm$ 0.4017
+**********************
+After aligning!!
+====================
+Average CKA: 0.5057 $\pm$ 0.0128
+Average CCA: 438.7243 $\pm$ 6.9287
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_450p7266_bestCKA_0p5021ppt
+[200/256] -> hd_512_od_256_nl_3_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0853 $\pm$ 0.0055
+Average CCA: 85.4520 $\pm$ 0.3792
+**********************
+After aligning!!
+====================
+Average CKA: 0.4977 $\pm$ 0.0292
+Average CCA: 437.0615 $\pm$ 7.5986
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_437p0101_bestCKA_0p5252ppt
+[201/256] -> hd_512_od_256_nl_3_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0796 $\pm$ 0.0044
+Average CCA: 85.9354 $\pm$ 0.5221
+**********************
+After aligning!!
+====================
+Average CKA: 0.4994 $\pm$ 0.0386
+Average CCA: 212.5157 $\pm$ 4.9459
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_206p4259_bestCKA_0p5008ppt
+[202/256] -> hd_512_od_256_nl_3_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0857 $\pm$ 0.0046
+Average CCA: 85.8170 $\pm$ 0.5787
+**********************
+After aligning!!
+====================
+Average CKA: 0.5101 $\pm$ 0.0233
+Average CCA: 258.7458 $\pm$ 8.4759
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_258p3094_bestCKA_0p5433ppt
+[203/256] -> hd_512_od_256_nl_3_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0819 $\pm$ 0.0081
+Average CCA: 86.2408 $\pm$ 0.8255
+**********************
+After aligning!!
+====================
+Average CKA: 0.5360 $\pm$ 0.0250
+Average CCA: 266.9700 $\pm$ 3.6789
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_271p4854_bestCKA_0p4913ppt
+[204/256] -> hd_512_od_256_nl_3_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0819 $\pm$ 0.0037
+Average CCA: 86.0046 $\pm$ 0.4542
+**********************
+After aligning!!
+====================
+Average CKA: 0.5059 $\pm$ 0.0211
+Average CCA: 269.3009 $\pm$ 3.0015
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_265p1158_bestCKA_0p5319ppt
+[205/256] -> hd_512_od_256_nl_3_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0805 $\pm$ 0.0032
+Average CCA: 86.4298 $\pm$ 0.7109
+**********************
+After aligning!!
+====================
+Average CKA: 0.5391 $\pm$ 0.0525
+Average CCA: 206.5376 $\pm$ 12.2771
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_207p3248_bestCKA_0p5610ppt
+[206/256] -> hd_512_od_256_nl_3_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0854 $\pm$ 0.0042
+Average CCA: 85.7911 $\pm$ 0.7369
+**********************
+After aligning!!
+====================
+Average CKA: 0.5534 $\pm$ 0.0283
+Average CCA: 260.5176 $\pm$ 2.4761
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_258p6335_bestCKA_0p5075ppt
+[207/256] -> hd_512_od_256_nl_3_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0864 $\pm$ 0.0089
+Average CCA: 85.8656 $\pm$ 0.7261
+**********************
+After aligning!!
+====================
+Average CKA: 0.4991 $\pm$ 0.0344
+Average CCA: 265.0482 $\pm$ 1.7770
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_266p2310_bestCKA_0p4834ppt
+[208/256] -> hd_512_od_256_nl_3_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0826 $\pm$ 0.0074
+Average CCA: 86.1247 $\pm$ 0.6917
+**********************
+After aligning!!
+====================
+Average CKA: 0.5167 $\pm$ 0.0399
+Average CCA: 262.0796 $\pm$ 8.0794
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_256p0858_bestCKA_0p5586ppt
+[209/256] -> hd_512_od_256_nl_3_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0842 $\pm$ 0.0065
+Average CCA: 86.1039 $\pm$ 0.4699
+**********************
+After aligning!!
+====================
+Average CKA: 0.4788 $\pm$ 0.0482
+Average CCA: 274.2927 $\pm$ 7.2745
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_262p0314_bestCKA_0p5663ppt
+[210/256] -> hd_512_od_256_nl_3_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0811 $\pm$ 0.0031
+Average CCA: 86.0499 $\pm$ 0.4164
+**********************
+After aligning!!
+====================
+Average CKA: 0.4986 $\pm$ 0.0207
+Average CCA: 330.3052 $\pm$ 11.4701
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_334p2332_bestCKA_0p4881ppt
+[211/256] -> hd_512_od_256_nl_3_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0830 $\pm$ 0.0031
+Average CCA: 86.1997 $\pm$ 0.3714
+**********************
+After aligning!!
+====================
+Average CKA: 0.5360 $\pm$ 0.0272
+Average CCA: 344.4234 $\pm$ 5.5602
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_340p2313_bestCKA_0p5634ppt
+[212/256] -> hd_512_od_256_nl_3_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0817 $\pm$ 0.0046
+Average CCA: 85.8221 $\pm$ 0.2775
+**********************
+After aligning!!
+====================
+Average CKA: 0.5020 $\pm$ 0.0138
+Average CCA: 345.0126 $\pm$ 6.4976
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_350p7446_bestCKA_0p4986ppt
+[213/256] -> hd_512_od_256_nl_3_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0848 $\pm$ 0.0073
+Average CCA: 85.8675 $\pm$ 0.5732
+**********************
+After aligning!!
+====================
+Average CKA: 0.4996 $\pm$ 0.0333
+Average CCA: 271.0237 $\pm$ 14.1518
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_279p6843_bestCKA_0p4853ppt
+[214/256] -> hd_512_od_256_nl_3_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0864 $\pm$ 0.0089
+Average CCA: 85.9324 $\pm$ 0.4408
+**********************
+After aligning!!
+====================
+Average CKA: 0.5188 $\pm$ 0.0527
+Average CCA: 336.3465 $\pm$ 6.7187
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_342p9211_bestCKA_0p5899ppt
+[215/256] -> hd_512_od_256_nl_3_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0865 $\pm$ 0.0032
+Average CCA: 86.0073 $\pm$ 0.5424
+**********************
+After aligning!!
+====================
+Average CKA: 0.5257 $\pm$ 0.0329
+Average CCA: 345.6230 $\pm$ 7.4247
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_349p3241_bestCKA_0p5505ppt
+[216/256] -> hd_512_od_256_nl_3_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0807 $\pm$ 0.0038
+Average CCA: 86.0578 $\pm$ 0.4980
+**********************
+After aligning!!
+====================
+Average CKA: 0.5282 $\pm$ 0.0427
+Average CCA: 346.0255 $\pm$ 6.6909
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_349p0823_bestCKA_0p5188ppt
+[217/256] -> hd_512_od_256_nl_3_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0876 $\pm$ 0.0052
+Average CCA: 85.6523 $\pm$ 0.4223
+**********************
+After aligning!!
+====================
+Average CKA: 0.5818 $\pm$ 0.0690
+Average CCA: 171.6971 $\pm$ 6.2821
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_169p3939_bestCKA_0p5893ppt
+[218/256] -> hd_512_od_256_nl_3_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0763 $\pm$ 0.0069
+Average CCA: 86.4293 $\pm$ 0.4092
+**********************
+After aligning!!
+====================
+Average CKA: 0.5589 $\pm$ 0.0737
+Average CCA: 196.8158 $\pm$ 13.7428
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_202p1863_bestCKA_0p4879ppt
+[219/256] -> hd_512_od_256_nl_3_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0868 $\pm$ 0.0078
+Average CCA: 85.7486 $\pm$ 0.8298
+**********************
+After aligning!!
+====================
+Average CKA: 0.5265 $\pm$ 0.0207
+Average CCA: 206.4056 $\pm$ 9.2286
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_197p0957_bestCKA_0p5156ppt
+[220/256] -> hd_512_od_256_nl_3_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0868 $\pm$ 0.0034
+Average CCA: 85.9846 $\pm$ 0.5744
+**********************
+After aligning!!
+====================
+Average CKA: 0.5342 $\pm$ 0.0250
+Average CCA: 210.6080 $\pm$ 3.3113
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_205p4959_bestCKA_0p5122ppt
+[221/256] -> hd_512_od_256_nl_3_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0754 $\pm$ 0.0062
+Average CCA: 86.8070 $\pm$ 0.1580
+**********************
+After aligning!!
+====================
+Average CKA: 0.5945 $\pm$ 0.0312
+Average CCA: 167.1753 $\pm$ 6.8174
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_175p5756_bestCKA_0p5449ppt
+[222/256] -> hd_512_od_256_nl_3_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0807 $\pm$ 0.0027
+Average CCA: 86.6037 $\pm$ 0.3715
+**********************
+After aligning!!
+====================
+Average CKA: 0.5000 $\pm$ 0.0488
+Average CCA: 209.8655 $\pm$ 7.2148
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_217p7625_bestCKA_0p4378ppt
+[223/256] -> hd_512_od_256_nl_3_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0797 $\pm$ 0.0028
+Average CCA: 86.0005 $\pm$ 0.1632
+**********************
+After aligning!!
+====================
+Average CKA: 0.5229 $\pm$ 0.0316
+Average CCA: 205.8353 $\pm$ 11.0502
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_205p7795_bestCKA_0p5162ppt
+[224/256] -> hd_512_od_256_nl_3_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=3, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0826 $\pm$ 0.0064
+Average CCA: 85.5927 $\pm$ 0.5058
+**********************
+After aligning!!
+====================
+Average CKA: 0.4992 $\pm$ 0.0436
+Average CCA: 212.1438 $\pm$ 6.6949
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_3_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_212p0983_bestCKA_0p5684ppt
+[225/256] -> hd_512_od_256_nl_5_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0805 $\pm$ 0.0060
+Average CCA: 86.4669 $\pm$ 0.3749
+**********************
+After aligning!!
+====================
+Average CKA: 0.4931 $\pm$ 0.0299
+Average CCA: 429.8272 $\pm$ 9.8194
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_444p5384_bestCKA_0p5438ppt
+[226/256] -> hd_512_od_256_nl_5_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0814 $\pm$ 0.0060
+Average CCA: 86.0497 $\pm$ 0.4719
+**********************
+After aligning!!
+====================
+Average CKA: 0.5300 $\pm$ 0.0377
+Average CCA: 496.4287 $\pm$ 21.0038
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_470p7390_bestCKA_0p5133ppt
+[227/256] -> hd_512_od_256_nl_5_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0810 $\pm$ 0.0095
+Average CCA: 86.3866 $\pm$ 1.0872
+**********************
+After aligning!!
+====================
+Average CKA: 0.5559 $\pm$ 0.0505
+Average CCA: 543.7050 $\pm$ 16.1484
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_558p7811_bestCKA_0p5285ppt
+[228/256] -> hd_512_od_256_nl_5_bs_64_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0808 $\pm$ 0.0049
+Average CCA: 86.3457 $\pm$ 0.4578
+**********************
+After aligning!!
+====================
+Average CKA: 0.5245 $\pm$ 0.0139
+Average CCA: 549.8527 $\pm$ 24.6231
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_64_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_535p4421_bestCKA_0p5334ppt
+[229/256] -> hd_512_od_256_nl_5_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0819 $\pm$ 0.0035
+Average CCA: 85.9589 $\pm$ 0.3739
+**********************
+After aligning!!
+====================
+Average CKA: 0.4999 $\pm$ 0.0201
+Average CCA: 410.5118 $\pm$ 16.1900
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_383p9778_bestCKA_0p4937ppt
+[230/256] -> hd_512_od_256_nl_5_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0817 $\pm$ 0.0029
+Average CCA: 85.8314 $\pm$ 0.6268
+**********************
+After aligning!!
+====================
+Average CKA: 0.5307 $\pm$ 0.0332
+Average CCA: 504.2823 $\pm$ 20.8718
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_531p2742_bestCKA_0p5161ppt
+[231/256] -> hd_512_od_256_nl_5_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0844 $\pm$ 0.0030
+Average CCA: 86.2684 $\pm$ 1.1089
+**********************
+After aligning!!
+====================
+Average CKA: 0.5426 $\pm$ 0.0177
+Average CCA: 503.7056 $\pm$ 22.9899
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_513p1666_bestCKA_0p5193ppt
+[232/256] -> hd_512_od_256_nl_5_bs_64_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0869 $\pm$ 0.0065
+Average CCA: 86.0735 $\pm$ 0.3505
+**********************
+After aligning!!
+====================
+Average CKA: 0.5585 $\pm$ 0.0123
+Average CCA: 483.0685 $\pm$ 34.9984
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_64_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_470p9550_bestCKA_0p5689ppt
+[233/256] -> hd_512_od_256_nl_5_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0809 $\pm$ 0.0050
+Average CCA: 86.4111 $\pm$ 0.4124
+**********************
+After aligning!!
+====================
+Average CKA: 0.5054 $\pm$ 0.0230
+Average CCA: 256.4950 $\pm$ 7.3706
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_244p4294_bestCKA_0p5224ppt
+[234/256] -> hd_512_od_256_nl_5_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0841 $\pm$ 0.0030
+Average CCA: 85.8152 $\pm$ 0.2741
+**********************
+After aligning!!
+====================
+Average CKA: 0.5188 $\pm$ 0.0147
+Average CCA: 307.6148 $\pm$ 6.2959
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_306p6422_bestCKA_0p5164ppt
+[235/256] -> hd_512_od_256_nl_5_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0853 $\pm$ 0.0047
+Average CCA: 85.7258 $\pm$ 0.4411
+**********************
+After aligning!!
+====================
+Average CKA: 0.5202 $\pm$ 0.0221
+Average CCA: 325.1256 $\pm$ 5.4900
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_328p2705_bestCKA_0p5160ppt
+[236/256] -> hd_512_od_256_nl_5_bs_64_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0833 $\pm$ 0.0051
+Average CCA: 86.2400 $\pm$ 0.4999
+**********************
+After aligning!!
+====================
+Average CKA: 0.5212 $\pm$ 0.0255
+Average CCA: 319.9828 $\pm$ 8.0707
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_64_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_334p0715_bestCKA_0p4767ppt
+[237/256] -> hd_512_od_256_nl_5_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0860 $\pm$ 0.0069
+Average CCA: 85.9995 $\pm$ 0.4446
+**********************
+After aligning!!
+====================
+Average CKA: 0.5030 $\pm$ 0.0134
+Average CCA: 251.8514 $\pm$ 4.2079
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_254p1079_bestCKA_0p4930ppt
+[238/256] -> hd_512_od_256_nl_5_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=64, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0892 $\pm$ 0.0060
+Average CCA: 85.4351 $\pm$ 0.3488
+**********************
+After aligning!!
+====================
+Average CKA: 0.4983 $\pm$ 0.0207
+Average CCA: 315.2577 $\pm$ 7.5089
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_326p9800_bestCKA_0p4641ppt
+[239/256] -> hd_512_od_256_nl_5_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0810 $\pm$ 0.0050
+Average CCA: 86.0677 $\pm$ 0.4639
+**********************
+After aligning!!
+====================
+Average CKA: 0.5078 $\pm$ 0.0208
+Average CCA: 329.7828 $\pm$ 9.4102
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_317p7120_bestCKA_0p5301ppt
+[240/256] -> hd_512_od_256_nl_5_bs_64_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=64, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0824 $\pm$ 0.0048
+Average CCA: 86.2242 $\pm$ 0.6278
+**********************
+After aligning!!
+====================
+Average CKA: 0.5219 $\pm$ 0.0266
+Average CCA: 317.5162 $\pm$ 8.5972
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_64_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_320p4569_bestCKA_0p5341ppt
+[241/256] -> hd_512_od_256_nl_5_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0813 $\pm$ 0.0083
+Average CCA: 86.1897 $\pm$ 0.6349
+**********************
+After aligning!!
+====================
+Average CKA: 0.4606 $\pm$ 0.0437
+Average CCA: 328.0926 $\pm$ 10.1524
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_330p4974_bestCKA_0p5385ppt
+[242/256] -> hd_512_od_256_nl_5_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0826 $\pm$ 0.0019
+Average CCA: 86.0378 $\pm$ 0.3188
+**********************
+After aligning!!
+====================
+Average CKA: 0.5325 $\pm$ 0.0217
+Average CCA: 380.1414 $\pm$ 17.0370
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_380p8697_bestCKA_0p5305ppt
+[243/256] -> hd_512_od_256_nl_5_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0800 $\pm$ 0.0041
+Average CCA: 85.8503 $\pm$ 0.2803
+**********************
+After aligning!!
+====================
+Average CKA: 0.5023 $\pm$ 0.0265
+Average CCA: 407.3499 $\pm$ 15.9448
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_393p0489_bestCKA_0p5460ppt
+[244/256] -> hd_512_od_256_nl_5_bs_128_lr_3e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0822 $\pm$ 0.0040
+Average CCA: 86.1652 $\pm$ 0.4503
+**********************
+After aligning!!
+====================
+Average CKA: 0.5161 $\pm$ 0.0120
+Average CCA: 400.1834 $\pm$ 17.9456
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_128_lr_0p003_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_370p5497_bestCKA_0p5360ppt
+[245/256] -> hd_512_od_256_nl_5_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0784 $\pm$ 0.0050
+Average CCA: 86.5139 $\pm$ 0.3302
+**********************
+After aligning!!
+====================
+Average CKA: 0.4723 $\pm$ 0.0211
+Average CCA: 327.7219 $\pm$ 7.5594
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_322p8408_bestCKA_0p4989ppt
+[246/256] -> hd_512_od_256_nl_5_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0804 $\pm$ 0.0061
+Average CCA: 85.9836 $\pm$ 0.7203
+**********************
+After aligning!!
+====================
+Average CKA: 0.5496 $\pm$ 0.0454
+Average CCA: 375.6780 $\pm$ 11.4389
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_390p9657_bestCKA_0p5377ppt
+[247/256] -> hd_512_od_256_nl_5_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0813 $\pm$ 0.0058
+Average CCA: 86.2500 $\pm$ 0.4200
+**********************
+After aligning!!
+====================
+Average CKA: 0.5198 $\pm$ 0.0202
+Average CCA: 409.8212 $\pm$ 10.9134
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_393p1715_bestCKA_0p5227ppt
+[248/256] -> hd_512_od_256_nl_5_bs_128_lr_3e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.003, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0791 $\pm$ 0.0055
+Average CCA: 86.0707 $\pm$ 0.4649
+**********************
+After aligning!!
+====================
+Average CKA: 0.5143 $\pm$ 0.0339
+Average CCA: 396.8763 $\pm$ 27.3488
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_128_lr_0p003_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_354p6326_bestCKA_0p5614ppt
+[249/256] -> hd_512_od_256_nl_5_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0844 $\pm$ 0.0051
+Average CCA: 85.9769 $\pm$ 0.4328
+**********************
+After aligning!!
+====================
+Average CKA: 0.4228 $\pm$ 0.0246
+Average CCA: 204.1809 $\pm$ 1.0892
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_205p8926_bestCKA_0p4140ppt
+[250/256] -> hd_512_od_256_nl_5_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0837 $\pm$ 0.0062
+Average CCA: 85.7046 $\pm$ 0.4054
+**********************
+After aligning!!
+====================
+Average CKA: 0.4949 $\pm$ 0.0386
+Average CCA: 255.0708 $\pm$ 2.0801
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_253p8685_bestCKA_0p4867ppt
+[251/256] -> hd_512_od_256_nl_5_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0849 $\pm$ 0.0048
+Average CCA: 86.3391 $\pm$ 0.7339
+**********************
+After aligning!!
+====================
+Average CKA: 0.5073 $\pm$ 0.0233
+Average CCA: 260.2354 $\pm$ 3.2951
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_260p8980_bestCKA_0p5443ppt
+[252/256] -> hd_512_od_256_nl_5_bs_128_lr_1e-3_wd_1e-4_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0001, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0848 $\pm$ 0.0049
+Average CCA: 86.3875 $\pm$ 0.3138
+**********************
+After aligning!!
+====================
+Average CKA: 0.5050 $\pm$ 0.0287
+Average CCA: 260.7704 $\pm$ 5.3095
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_128_lr_0p001_wd_0p0001_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_252p8162_bestCKA_0p5170ppt
+[253/256] -> hd_512_od_256_nl_5_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0818 $\pm$ 0.0046
+Average CCA: 85.9518 $\pm$ 0.3560
+**********************
+After aligning!!
+====================
+Average CKA: 0.4531 $\pm$ 0.0200
+Average CCA: 206.1435 $\pm$ 3.6365
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p05_minlr_1e-05/run5_bestCCA_206p9172_bestCKA_0p4566ppt
+[254/256] -> hd_512_od_256_nl_5_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_cosine_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=128, scheduler='cosine', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0865 $\pm$ 0.0045
+Average CCA: 86.1780 $\pm$ 0.4724
+**********************
+After aligning!!
+====================
+Average CKA: 0.5154 $\pm$ 0.0261
+Average CCA: 255.7368 $\pm$ 6.5647
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_cosine_wr_0p0_minlr_1e-05/run5_bestCCA_250p0825_bestCKA_0p5082ppt
+[255/256] -> hd_512_od_256_nl_5_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.05_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.05, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0815 $\pm$ 0.0063
+Average CCA: 86.5019 $\pm$ 0.7607
+**********************
+After aligning!!
+====================
+Average CKA: 0.5103 $\pm$ 0.0518
+Average CCA: 256.8851 $\pm$ 5.9198
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p05_minlr_1e-05/run5_bestCCA_258p4870_bestCKA_0p5869ppt
+[256/256] -> hd_512_od_256_nl_5_bs_128_lr_1e-3_wd_0_ne_50_nr_5_sch_none_wr_0.0_minlr_1e-5 (GPU 0)
+Namespace(hidden_dim=512, output_dim=256, num_layers=5, batch_size=128, scheduler='none', warmup_ratio=0.0, min_lr=1e-05, lr=0.001, wd=0.0, num_epochs=50, num_runs=5, gpu=0, device='cuda:0')
+====================
+Before aligning!!
+====================
+Average CKA: 0.0834 $\pm$ 0.0073
+Average CCA: 85.9674 $\pm$ 0.4024
+**********************
+After aligning!!
+====================
+Average CKA: 0.4942 $\pm$ 0.0411
+Average CCA: 258.6409 $\pm$ 4.7331
+====================
+[Models saved in] ../saved_models/hd_512_od_256_nl_5_bs_128_lr_0p001_wd_0p0_ne_50_nr_5_sch_none_wr_0p0_minlr_1e-05/run5_bestCCA_256p8582_bestCKA_0p5554ppt
